@@ -1,8 +1,9 @@
-.navBar {
-    max-width: 1440px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+.landingPage {
+        display: inline-flex;
+        padding: 0px 747px 207px 0px;
+        align-items: center;
+        background: var(
+          --style-2-Style-2-blue-gradient-ligth-blue,
+          linear-gradient(180deg, #fff 12.89%, #eaf0ff 91.39%)
+        );
 }
