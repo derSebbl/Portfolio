@@ -15,3 +15,59 @@
   top: 105px;
   left: 32px;
 }
+
+.nameGreeting {
+  position: absolute;
+  top: 232px;
+  left: 731px;
+  display: flex;
+  width: 645px;
+  height: 61px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #5988ff;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 64px */
+}
+
+.jobTitel {
+  position: absolute;
+  top: 310px;
+  left: 731px;
+  flex-shrink: 0;
+  > .frontend {
+    display: flex;
+    width: 645px;
+    height: 114px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--style-2-Style-2-blue-blue, #5988ff);
+    font-family: Baloo;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 153.6px */
+    letter-spacing: -3.2px;
+  }
+
+  > .developer {
+    display: flex;
+    width: 609px;
+    height: 110px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--style-2-Style-2-blue-blue, #5988ff);
+    font-family: Baloo;
+    font-size: 118px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 141.6px */
+    letter-spacing: -2.36px;
+  }
+}
