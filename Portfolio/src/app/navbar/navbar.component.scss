@@ -1,9 +1,9 @@
 .navbar {
   display: flex;
+  max-width: 1440px;
   padding: 24px 83.5px 24px 100px;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(32.5px);
 
   > .links {
     display: flex;
