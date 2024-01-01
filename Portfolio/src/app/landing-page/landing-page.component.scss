@@ -19,7 +19,7 @@
 .nameGreeting {
   position: absolute;
   top: 232px;
-  left: 731px;
+  padding-left: 731px;
   display: flex;
   width: 645px;
   height: 61px;
@@ -37,7 +37,7 @@
 .jobTitel {
   position: absolute;
   top: 310px;
-  left: 731px;
+  padding-left: 731px;
   flex-shrink: 0;
   > .frontend {
     display: flex;
