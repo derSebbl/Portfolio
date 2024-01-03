@@ -8,12 +8,8 @@
   );
 }
 
-.circleCenter {
-  position: relative;
-  top: -103px;
-  padding-left: 596px;
-  width: 206px;
-  height: 206px;
-  flex-shrink: 0;
-  z-index: 9;
+.aboutMe {
+  width: 100%;
+  max-width: 1440px;
 }
+
