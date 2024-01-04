@@ -47,18 +47,58 @@
   border: 2px solid var(--style-2-Style-2-blue-blue, #5988ff);
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
   color: var(--style-2-Style-2-blue-blue, #5988ff);
-  font-family: Poppins;
+  font-family: poppins;
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
+    &:hover {
+      cursor: pointer;
+      animation: changeBackground 100ms ease-in-out;
+      animation-fill-mode: forwards;
+    }
 }
 
-.circle {
-  position: relative;
-  width: 82px;
-  height: 82px;
-  flex-shrink: 0;
-  padding-left: 1034px;
-  padding-top: 62px;
+@keyframes changeBackground {
+  33% {
+      display: inline-flex;
+      padding: 15px 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      border: 2px solid var(--style-2-Style-2-blue-blue, #5988FF);
+      background: linear-gradient(105deg, #5988FF -90.22%, #5988FF -49.45%, #0043F0 27.88%, #FFF 33.64%, #FFF 39.44%, #FFF 90.08%);
+  }
+  66% {
+      color: var(--White, #FFF);
+      font-family: Poppins;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      display: inline-flex;
+      padding: 18px 35px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      border: 2px solid var(--style-2-Style-2-blue-blue, #5988FF);
+      background: linear-gradient(104deg, #5988FF 9.21%, #5988FF 27.52%, #0043F0 62.24%, #FFF 64.83%, #FFF 67.43%, #FFF 90.18%);
+  }
+  100% {
+      color: var(--White, #FFF);
+      font-family: Poppins;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      display: inline-flex;
+      padding: 20px 40px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      background: var(--style-2-Style-2-blue-GR, radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%));
+  }
 }
