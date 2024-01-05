@@ -1,9 +1,10 @@
 .mainContainer {
+  padding-top: 70px;
   display: flex;
   flex-direction: row;
   max-width: 1440px;
   width: 100%;
-  height: 530px;
+  height: 460px;
   gap: 38px;
 }
 
@@ -17,14 +18,6 @@
   gap: 10px;
   flex-shrink: 0;
   padding-left: 50px;
-  transition: background-size 0.5s ease;
-  &:hover {
-    transform: translateY(-10px);
-    > .img {
-      width: 640px;
-      height: 413px;
-    }
-  }
 }
 
 .img {
@@ -39,6 +32,13 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: background-size 0.2s ease, transform 0.2s ease;
+  &:hover {
+    width: 640px;
+    height: 413px;
+    transition: width 0.2s, height 0.2s; 
+        transform: translateY(-26px);
+}
 }
 
 .textContainer {
