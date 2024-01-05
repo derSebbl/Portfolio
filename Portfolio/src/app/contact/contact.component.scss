@@ -73,4 +73,15 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
+  > input {
+    display: flex;
+    width: 565px;
+    height: 18px;
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--style-2-Style-2-blue-blue, #5988ff);
+    background: var(--White, #fff);
+  }
 }
