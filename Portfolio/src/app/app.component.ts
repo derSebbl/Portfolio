@@ -7,12 +7,13 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { WorkLeftComponent } from './work-left/work-left.component';
 import { WorkRightComponent } from './work-right/work-right.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, LandingPageComponent, NavbarComponent, AboutMeComponent,
-            SkillsComponent, WorkLeftComponent, WorkRightComponent],
+            SkillsComponent, WorkLeftComponent, WorkRightComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
