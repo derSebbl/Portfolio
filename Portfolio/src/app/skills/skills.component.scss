@@ -69,12 +69,19 @@
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+  &:hover {
+    font-weight: 600;
+    > img {
+      transform: translate(10px, -10px); 
+    }
+  }
   > img {
     display: flex;
     height: 75px;
     align-items: flex-start;
     gap: 10px;
     flex-shrink: 0;
+    transition: transform 0.1s ease-in-out; 
   }
   > span {
     text-align: center;
