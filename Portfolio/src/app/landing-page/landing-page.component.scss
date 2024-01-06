@@ -1,3 +1,11 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  height: 1028px;
+  background: var(--style-2-Style-2-blue-gradient-ligth-blue, linear-gradient(180deg, #FFF 12.89%, #EAF0FF 91.39%));
+}
+
 .navBar {
   max-width: 1440px;
   width: 100%;
@@ -17,8 +25,7 @@
 }
 
 .nameGreeting {
-  position: absolute;
-  top: 232px;
+  padding-top: 232px;
   padding-left: 731px;
   display: flex;
   width: 645px;
@@ -35,8 +42,7 @@
 }
 
 .jobTitel {
-  position: absolute;
-  top: 310px;
+  padding-top: 17px;
   padding-left: 731px;
   flex-shrink: 0;
   > .frontend {
@@ -73,8 +79,7 @@
 }
 
 .scroll {
-  position: absolute;
-  top: 661px;
+  padding-top: 130px;
   padding-left: 987px;
   color: var(--style-2-Style-2-blue-blue, #5988ff);
   font-family: Montserrat;
@@ -84,10 +89,13 @@
   line-height: 120%;
 }
 
-.line {
-  position: absolute;
-  top: 699px;
+.lineContainer {
+  padding-top: 10px;
   padding-left: 1034px;
+  display: flex;
+}
+
+.line {
   width: 0px;
   height: 330px;
   flex-shrink: 0;
@@ -97,14 +105,13 @@
 }
 
 .socials {
-  position: absolute;
-  top: 794px;
-  padding-left: 1300px;
+  padding-left: 266px;
+  padding-top: 95px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
-  >img {
+  > img {
     transition: transform 0.3s ease;
     &:hover {
       transform: translateX(-10px);
