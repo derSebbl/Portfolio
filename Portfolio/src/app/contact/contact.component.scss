@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
   width: 1440px;
   height: 746px;
   flex-shrink: 0;
@@ -166,8 +167,10 @@
   font-weight: 400;
   line-height: 120%;
 }
-
 .arrow {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
   display: flex;
   box-sizing: border-box;
   width: 39px;
@@ -177,13 +180,28 @@
   align-items: center;
   flex-shrink: 0;
   border-radius: 41px;
-  background: var(
-    --style-2-Style-2-blue-GR,
-    radial-gradient(
-      91.12% 91.12% at 19.79% 22.42%,
-      #5988ff 6.25%,
-      #5988ff 51.56%,
-      #0043f0 100%
-    )
-  );
+  background: url(../../assets/img/arrow-back-top.svg),
+    var(
+      --style-2-Style-2-blue-GR,
+      radial-gradient(
+        91.12% 91.12% at 19.79% 22.42%,
+        #5988ff 6.25%,
+        #5988ff 51.56%,
+        #0043f0 100%
+      )
+    );
+  background-size: 50% 50% cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+  .arrow:hover {
+    cursor: pointer;
+    border: 2px solid var(--style-2-Style-2-blue-GR, #5988ff);
+    background: none;
+    background-image: url(../../assets/img/arrow-back-top-hover.svg);
+    background-size: 50% 50% cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
