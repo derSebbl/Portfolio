@@ -4,6 +4,7 @@
   width: 1440px;
   height: 1028px;
   background: var(--style-2-Style-2-blue-gradient-ligth-blue, linear-gradient(180deg, #FFF 12.89%, #EAF0FF 91.39%));
+  
 }
 
 .navBar {
@@ -13,6 +14,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9;
 }
 
 .picturePerson {
@@ -22,6 +24,7 @@
   position: absolute;
   top: 105px;
   left: 32px;
+  z-index: 9;
 }
 
 .nameGreeting {
