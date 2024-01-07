@@ -10,4 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 })
 export class LandingPageComponent {
 
+  openGitProfile() {
+    window.open('https://github.com/derSebbl', '_blank');
+}
+
 }
