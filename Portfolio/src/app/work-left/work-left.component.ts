@@ -16,9 +16,4 @@ export class WorkLeftComponent {
   @Input() image: string | undefined;
   @Input() description: string | undefined;
 
-
-  getBackgroundStyle() {
-    return this.image ? `url(${this.image}) no-repeat 100% 100%` : '';
-  }
-
 }
