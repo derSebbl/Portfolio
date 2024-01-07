@@ -2,12 +2,11 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  box-sizing: border-box;
   width: 1440px;
   height: 746px;
   flex-shrink: 0;
   background: linear-gradient(180deg, #fff 12.89%, #eaf0ff 91.39%);
-  padding-top: 234px;
+  padding-top: 234px;;
 }
 
 .contact {
@@ -71,6 +70,7 @@
 
 .inputContainer {
   position: relative;
+  padding-top: 139px;
   padding-left: 151px;
   display: inline-flex;
   flex-direction: column;
@@ -151,21 +151,29 @@
   }
 }
 
-.btnSend {
+#btnSend {
   display: flex;
   padding: 15px 30px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 10px;
-  border: 2px solid #bbb;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
-  color: #bbb;
   font-family: Montserrat;
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+  color: #5988FF;
+  border: 2px solid var(--style-2-Style-2-blue-blue, #5988FF);
+  background-color: #fff;
+  &:hover {
+    cursor: pointer;
+  }
+  &:disabled {
+    border: 2px solid #bbb;
+    color: #bbb;
+  }
 }
 .arrow {
   position: absolute;
