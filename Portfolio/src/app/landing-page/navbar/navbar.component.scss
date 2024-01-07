@@ -17,7 +17,8 @@
     font-weight: 400;
     line-height: 120%;
 
-    > #aboutMe {
+    > .aboutMe {
+      color: var(--style-2-Style-2-blue-blue, #5988ff);
       display: flex;
       width: 120px;
       height: 32px;
@@ -30,7 +31,8 @@
       }
     }
 
-    > #skillSet {
+    > .skillSet {
+      color: var(--style-2-Style-2-blue-blue, #5988ff);
       display: flex;
       width: 120px;
       height: 32px;
@@ -43,7 +45,8 @@
       }
     }
 
-    > #myWork {
+    > .myWork {
+      color: var(--style-2-Style-2-blue-blue, #5988ff);
       display: flex;
       width: 120px;
       height: 32px;
