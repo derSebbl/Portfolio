@@ -23,4 +23,8 @@ export class WorkLeftComponent {
     window.open(this.linkLive, '_blank');
   }
 
+  openGit() {
+    window.open(this.linkGit, '_blank');
+  }
+
 }

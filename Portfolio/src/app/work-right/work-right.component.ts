@@ -22,4 +22,8 @@ export class WorkRightComponent {
   openWork() {
     window.open(this.linkLive, '_blank');
   }
+
+  openGit() {
+    window.open(this.linkGit, '_blank');
+  }
 }

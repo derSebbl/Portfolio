@@ -5,7 +5,7 @@
             <span class="skills">{{ skills }}</span>
             <span class="description">{{ description }}</span>
         </div>
-        <a href="{{ linkGit }}" id="gitBtn">Github</a>
+        <div (click)="openGit()" id="gitBtn">Github</div>
     </div>
     <div class="imgContainer">
         <div (click)="openWork()" class="img" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
