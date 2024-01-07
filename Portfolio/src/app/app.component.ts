@@ -8,12 +8,13 @@ import { SkillsComponent } from './skills/skills.component';
 import { WorkLeftComponent } from './work-left/work-left.component';
 import { WorkRightComponent } from './work-right/work-right.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, LandingPageComponent, NavbarComponent, AboutMeComponent,
-            SkillsComponent, WorkLeftComponent, WorkRightComponent, ContactComponent],
+            SkillsComponent, WorkLeftComponent, WorkRightComponent, ContactComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
