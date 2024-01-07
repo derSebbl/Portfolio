@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-work-left',
@@ -8,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './work-left.component.scss'
 })
 export class WorkLeftComponent {
+
+  constructor() { }
+
+  @Input() header: string | undefined;
+  @Input() skills: string | undefined;
+  @Input() image: string | undefined;
+  @Input() description: string | undefined;
+
+
+  getBackgroundStyle() {
+    return this.image ? `url(${this.image}) no-repeat 100% 100%` : '';
+  }
 
 }
