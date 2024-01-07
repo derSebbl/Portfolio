@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-work-left',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './work-left.component.html',
   styleUrl: './work-left.component.scss'
 })

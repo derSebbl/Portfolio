@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-work-right',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './work-right.component.html',
   styleUrl: './work-right.component.scss'
 })
