@@ -16,6 +16,6 @@ export class WorkLeftComponent {
   @Input() skills: string | undefined;
   @Input() image: string | undefined;
   @Input() description: string | undefined;
-  @Input() link: string | undefined;
+  @Input() linkGit: string | undefined;
 
 }
