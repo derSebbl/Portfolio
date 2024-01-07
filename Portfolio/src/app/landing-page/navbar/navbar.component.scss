@@ -24,6 +24,10 @@
       padding: 0px 4px 4px 0px;
       align-items: center;
       flex-shrink: 0;
+      &:hover {
+        cursor: pointer;
+        font-weight: bold;
+      }
     }
 
     > #skillSet {
@@ -33,6 +37,10 @@
       padding: 0px 33px 4px 0px;
       align-items: center;
       flex-shrink: 0;
+      &:hover {
+        cursor: pointer;
+        font-weight: bold;
+      }
     }
 
     > #myWork {
@@ -42,13 +50,10 @@
       padding: 0px 22px 4px 0px;
       align-items: center;
       flex-shrink: 0;
-    }
-
-    >.navButtons:hover {
+      &:hover {
         cursor: pointer;
-        font-weight: bolder;
+        font-weight: bold;
       }
-
+    }
   }
-
 }
