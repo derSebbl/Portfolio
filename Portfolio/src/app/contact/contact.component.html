@@ -10,18 +10,17 @@
       Need a Frontend developer? <span>Contact me!</span>
     </div>
   </div> 
-  <form class="inputContainer">
-    <input required id="nameField" type="text" placeholder="Your name" />
-    <input required id="emailField" type="email" placeholder="Your email" />
-    <textarea required id="textField" type="text" placeholder="Your message"></textarea>
-    <img class="frameTxt" src="../../assets/img/Frame Textarea.svg" />
-      <div class="btnContainer">
-        <div class="ceckboxContainer">
-          <input class="checkbox" type="checkbox">
-          <div class="checkboxText">I've read the <div class="privacy">privacy policy </div> and agree to the processing of my data as outlined.</div>
-        </div>
-        <button id="btnSend" disabled type="submit">Say hello :) </button>
+  <form class="inputContainer" #contactForm="ngForm">
+    <input required id="nameField" type="text" placeholder="Your name" name="name" ngModel />
+    <input required id="emailField" type="email" placeholder="Your email" name="email" ngModel />
+    <textarea required id="textField" type="text" placeholder="Your message" name="message" ngModel></textarea>
+    <div class="btnContainer">
+      <div class="ceckboxContainer">
+        <input required ="checkbox" type="checkbox" name="privacy" ngModel>
+        <div class="checkboxText">I've read the <div class="privacy">privacy policy </div> and agree to the processing of my data as outlined.</div>
       </div>
+      <button id="btnSend" [disabled]="!contactForm.valid" type="submit">Say hello :) </button>
+    </div>
   </form>
   <div class="arrow" (click)="scrollToTop()"></div>
-</div>
+  </div>
