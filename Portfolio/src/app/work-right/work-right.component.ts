@@ -17,5 +17,9 @@ export class WorkRightComponent {
   @Input() image: string | undefined;
   @Input() description: string | undefined;
   @Input() linkGit: string | undefined;
+  @Input() linkLive: string | undefined;
 
+  openWork() {
+    window.open(this.linkLive, '_blank');
+  }
 }

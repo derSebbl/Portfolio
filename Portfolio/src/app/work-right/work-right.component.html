@@ -8,6 +8,6 @@
         <a href="{{ linkGit }}" id="gitBtn">Github</a>
     </div>
     <div class="imgContainer">
-        <div class="img" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
+        <div (click)="openWork()" class="img" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
     </div>
 </div>
