@@ -86,6 +86,15 @@
     border-radius: 10px;
     border: 1px solid var(--style-2-Style-2-blue-blue, #5988ff);
     background: var(--White, #fff);
+    &:hover {
+      padding: 14px 24px;
+      border: 2px solid var(--style-2-Style-2-blue-blue, #5988ff);
+    }
+    &:focus {
+      border: 1px solid var(--style-2-Style-2-blue-blue, #5988ff);
+      outline: none;
+      padding: 15px 25px;
+    }
   }
   > textarea {
     color: var(--Black, #000);
@@ -106,8 +115,17 @@
     resize: vertical;
     position: relative;
     display: inline-block;
+    &:hover {
+      padding: 14px 24px;
+      border: 2px solid var(--style-2-Style-2-blue-blue, #5988ff);
+    }
+    &:focus {
+      border: 1px solid var(--style-2-Style-2-blue-blue, #5988ff);
+      outline: none;
+      padding: 15px 25px;
+    }
   }
-}
+  }
 
 .btnContainer {
   padding-top: -16px;
