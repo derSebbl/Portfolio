@@ -12,7 +12,7 @@
   </div> 
   <form class="inputContainer" #contactForm="ngForm">
     <div class="nameInput">
-      <div class="placeholderText">Your name</div>
+      <div class="placeholderText"> Your name </div>
       <input required id="nameField" type="text" name="name" [(ngModel)]="name">
     </div>
     <div class="mailInput">
@@ -25,7 +25,7 @@
     </div>
     <div class="btnContainer">
       <div class="ceckboxContainer">
-        <input required ="checkbox" type="checkbox" name="privacy" ngModel>
+        <input required id="checkbox" type="checkbox" name="privacy" ngModel>
         <div class="checkboxText">I've read the <div class="privacy">privacy policy </div> and agree to the processing of my data as outlined.</div>
       </div>
       <button id="btnSend" [disabled]="!contactForm.valid" type="submit">Say hello :) </button>
