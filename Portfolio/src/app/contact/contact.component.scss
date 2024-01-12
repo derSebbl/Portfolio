@@ -81,16 +81,16 @@
     > .placeholderText {
       font-family: Montserrat;
       position: absolute;
-      //top: 25%;
-      top: -10px;
+      top: 25%;
       left: 20px;
       pointer-events: none;
       color: gray;  
-      transition: top 0.3s ease; // Hinzufügen einer Übergangseffekt
+      transition: top 0.3s ease;
     }
     &:focus-within {
       > .placeholderText {
         top: -10px;
+        backdrop-filter: blur(70px);
       }
     }
     > input {
@@ -115,6 +115,24 @@
       }
     }
   }
+  > .textInput {
+    position: relative;
+    > .placeholderTextMsg {
+      font-family: Montserrat;
+      position: absolute;
+      top: 10%;
+      left: 20px;
+      pointer-events: none;
+      color: gray;  
+      transition: top 0.3s ease;
+      z-index: 9;
+    }
+    &:focus-within {
+      > .placeholderTextMsg {
+        top: -10px;
+        backdrop-filter: blur(70px);
+      }
+    }
   > textarea {
     color: var(--Black, #000);
     font-family: Montserrat;
@@ -145,6 +163,7 @@
     }
   }
   }
+}
 
 
 .btnContainer {
