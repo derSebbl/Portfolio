@@ -11,8 +11,14 @@
     </div>
   </div> 
   <form class="inputContainer" #contactForm="ngForm">
-    <input required id="nameField" type="text" placeholder="Your name" name="name" ngModel />
-    <input required id="emailField" type="email" placeholder="Your email" name="email" ngModel />
+    <div class="nameInput">
+      <div class="placeholderText">Your name</div>
+      <input required id="nameField" type="text" name="name" ngModel />
+    </div>
+    <div class="mailInput">
+      <div class="placeholderText">Your email</div>
+      <input required id="emailField" type="email" name="email" ngModel />
+    </div>
     <textarea required id="textField" type="text" placeholder="Your message" name="message" ngModel></textarea>
     <div class="btnContainer">
       <div class="ceckboxContainer">
