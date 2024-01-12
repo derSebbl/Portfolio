@@ -13,15 +13,15 @@
   <form class="inputContainer" #contactForm="ngForm">
     <div class="nameInput">
       <div class="placeholderText">Your name</div>
-      <input required id="nameField" type="text" name="name" ngModel />
+      <input required id="nameField" type="text" name="name" [(ngModel)]="name">
     </div>
     <div class="mailInput">
       <div class="placeholderText">Your email</div>
-      <input required id="emailField" type="email" name="email" ngModel />
+      <input required id="emailField" type="email" name="email" [(ngModel)]="email">
     </div>
     <div class="textInput">
       <div class="placeholderTextMsg">Your message</div>
-    <textarea required id="textField" type="text" name="message" ngModel></textarea>
+      <textarea required id="textField" type="text" name="message" [(ngModel)]="message"></textarea>
     </div>
     <div class="btnContainer">
       <div class="ceckboxContainer">
