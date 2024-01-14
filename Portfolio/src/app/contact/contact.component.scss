@@ -199,6 +199,7 @@
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  height: 52px;
 }
 
 .boxAndText {
@@ -319,6 +320,15 @@
 }
 
 .errorImg {
+  width: 25.049px;
+  height: 25px;
+  flex-shrink: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.acceptImg {
   width: 25.049px;
   height: 25px;
   flex-shrink: 0;
