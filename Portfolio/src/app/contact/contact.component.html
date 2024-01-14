@@ -14,17 +14,20 @@
     <div class="nameInput">
       <div class="placeholderText"> Your name </div>
       <input required id="nameField" type="text" name="name" [(ngModel)]="name" #nameField="ngModel">
-      <div class="errorName" *ngIf="nameField.invalid && nameField.touched">Your name is required </div>
+      <img class="errorImg" *ngIf="nameField.invalid && nameField.touched" src="../../assets/img/error.svg">
+      <div class="errorTxt" *ngIf="nameField.invalid && nameField.touched">Your name is required </div>
     </div>
     <div class="mailInput">
       <div class="placeholderText">Your email</div>
       <input required id="emailField" type="email" name="email" [(ngModel)]="email" #mailField="ngModel">
-      <div class="errorMail" *ngIf="mailField.invalid && mailField.touched">Your email is required</div>
+      <img class="errorImg" *ngIf="mailField.invalid && mailField.touched" src="../../assets/img/error.svg">
+      <div class="errorTxt" *ngIf="mailField.invalid && mailField.touched">Your email is required</div>
     </div>
     <div class="textInput">
       <div class="placeholderTextMsg">Your message</div>
       <textarea required id="textField" type="text" name="message" [(ngModel)]="message" #textField="ngModel"></textarea>
-      <div class="errorMessage" *ngIf="textField.invalid && textField.touched">Your message is empty</div>
+      <img class="errorImg" *ngIf="textField.invalid && textField.touched" src="../../assets/img/error.svg">
+      <div class="errorTxt" *ngIf="textField.invalid && textField.touched">Your message is empty</div>
     </div>
     <div class="btnContainer">
       <div class="ceckboxContainer">
@@ -32,7 +35,7 @@
           <input required id="checkbox" type="checkbox" name="privacy" [(ngModel)]="privacy" #privacyField="ngModel">
           <label for="checkbox" class="checkboxText">I've read the <div class="privacy">privacy policy </div> and agree to the processing of my data as outlined.</label>
         </div>
-        <div class="errorPrivacy" *ngIf="privacyField.invalid && privacyField.touched">Please accept the privacy policy.</div>
+        <div class="errorTxt" *ngIf="privacyField.invalid && privacyField.touched">Please accept the privacy policy.</div>
       </div>
       <button id="btnSend" [disabled]="!contactForm.valid" type="submit">Say hello :) </button>
     </div>

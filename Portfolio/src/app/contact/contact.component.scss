@@ -85,7 +85,7 @@
     > .placeholderText {
       font-family: Montserrat;
       position: absolute;
-      top: 25%;
+      top: 15px;
       left: 20px;
       pointer-events: none;
       color: gray;
@@ -133,7 +133,7 @@
     > .placeholderTextMsg {
       font-family: Montserrat;
       position: absolute;
-      top: 10%;
+      top: 15px;
       left: 20px;
       pointer-events: none;
       color: gray;
@@ -309,11 +309,20 @@
   }
 }
 
-.errorName, .errorMail, .errorMessage, .errorPrivacy {
+.errorTxt {
   color: #e61c40;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+}
+
+.errorImg {
+  width: 25.049px;
+  height: 25px;
+  flex-shrink: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
