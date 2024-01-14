@@ -12,11 +12,14 @@
 
 .content {
   display: flex;
-  gap: 351px;
+  gap: 151px;
+  width: 100%;
+  justify-content: center;
 }
 
 .contact {
   display: flex;
+  width: 100%;
   position: absolute;
   justify-content: flex-start;
   color: var(--style-2-Style-2-blue-blue, #5988ff);
