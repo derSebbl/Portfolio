@@ -6,7 +6,7 @@
   height: 746px;
   flex-shrink: 0;
   background: linear-gradient(180deg, #fff 12.89%, #eaf0ff 91.39%);
-  padding-top: 234px;;
+  padding-top: 234px;
 }
 
 .contact {
@@ -76,15 +76,19 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  > .nameInput, .mailInput {
+  > .nameInput,
+  .mailInput {
     position: relative;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
     > .placeholderText {
       font-family: Montserrat;
       position: absolute;
       top: 25%;
       left: 20px;
       pointer-events: none;
-      color: gray;  
+      color: gray;
       transition: top 0.3s ease;
     }
     &:focus-within,
@@ -123,13 +127,16 @@
   }
   > .textInput {
     position: relative;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
     > .placeholderTextMsg {
       font-family: Montserrat;
       position: absolute;
       top: 10%;
       left: 20px;
       pointer-events: none;
-      color: gray;  
+      color: gray;
       transition: top 0.3s ease;
       z-index: 9;
     }
@@ -161,7 +168,7 @@
       border-radius: 10px;
       border: 1px solid var(--style-2-Style-2-blue-blue, #5988ff);
       background: var(--White, #fff);
-      resize: vertical;
+      resize: none;
       position: relative;
       display: inline-block;
       &:hover {
@@ -177,7 +184,6 @@
   }
 }
 
-
 .btnContainer {
   padding-top: -16px;
   display: flex;
@@ -189,21 +195,27 @@
 
 .ceckboxContainer {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
   align-self: stretch;
-  > .checkboxText {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--Black, #000);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-  }
+}
+
+.boxAndText {
+  display: flex;
+  gap: 10px;
+}
+
+.checkboxText {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Black, #000);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 .privacy {
@@ -235,9 +247,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-  color: #5988FF;
-  border: 2px solid var(--style-2-Style-2-blue-blue, #5988FF);
-  background:none;
+  color: #5988ff;
+  border: 2px solid var(--style-2-Style-2-blue-blue, #5988ff);
+  background: none;
   &:hover {
     cursor: pointer;
     animation: changeBackground 80ms ease-in-out;
@@ -280,22 +292,28 @@
   background-repeat: no-repeat;
 }
 
-  .arrow:hover {
-    cursor: pointer;
-    border: 2px solid var(--style-2-Style-2-blue-GR, #5988ff);
-    background: none;
-    background-image: url(../../assets/img/arrow-back-top-hover.svg);
-    background-size: 50% 50% cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.arrow:hover {
+  cursor: pointer;
+  border: 2px solid var(--style-2-Style-2-blue-GR, #5988ff);
+  background: none;
+  background-image: url(../../assets/img/arrow-back-top-hover.svg);
+  background-size: 50% 50% cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.not-empty {
+  > .placeholderText {
+    top: -10px;
+    backdrop-filter: blur(70px);
   }
+}
 
-  .not-empty {
-    > .placeholderText {
-      top: -10px;
-      backdrop-filter: blur(70px);
-    }
-  }
-
-
-
+.errorName, .errorMail, .errorMessage, .errorPrivacy {
+  color: #e61c40;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
