@@ -1,15 +1,15 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  max-width: 1920px;
   width: 100%;
   height: 1028px;
   background: var(--style-2-Style-2-blue-gradient-ligth-blue, linear-gradient(180deg, #FFF 12.89%, #EAF0FF 91.39%));
-  
+  align-items: center;
 }
 
 .navBar {
-  max-width: 1440px;
+  max-width: 1720px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@
 
 .nameGreeting {
   padding-top: 232px;
-  padding-left: 731px;
+  padding-left: 736px;
   display: flex;
   max-width: 645px;
   width: 100%;
@@ -85,8 +85,11 @@
   }
 }
 
-.scroll {
+.scrollContainer {
   padding-top: 130px;
+}
+
+.scroll {
   padding-left: 987px;
   color: var(--style-2-Style-2-blue-blue, #5988ff);
   font-family: Montserrat;

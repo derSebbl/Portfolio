@@ -1,11 +1,12 @@
 .mainContainer {
-    padding-top: 70px;
-    display: flex;
-    flex-direction: row;
-    max-width: 1440px;
-    width: 100%;
-    height: 460px;
-    gap: 38px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1920px;
+  width: 100%;
+  height: 460px;
+  gap: 38px;
+  justify-content: space-evenly;
   }
   
   .imgContainer {

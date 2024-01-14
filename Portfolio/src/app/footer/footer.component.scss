@@ -1,6 +1,6 @@
 .mainContainer {
   display: flex;
-  max-width: 1440px;
+  max-width: 1920px;
   width: 100%;
   box-sizing: border-box;
   padding: 121px 100px 60px 100px;
@@ -20,6 +20,7 @@
   display: flex;
   width: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 .name {
