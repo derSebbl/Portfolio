@@ -1,31 +1,40 @@
-<div id="work" class="myWork">
-    <div class="header">My work</div>
-    <div class="description">This page is a sample of my work - please feel free to try them out.</div>
+<div class="mainContainer">
+    <div id="work" class="myWork">
+        <div class="header">My work</div>
+        <div class="description">This page is a sample of my work - please feel free to try them out.</div>
+    </div>
+    <app-work-left 
+        [linkLive]="'https://sebastian-binz.developerakademie.net/Join/login/login.html'" 
+        [linkGit]="'https://github.com/derSebbl/join'" 
+        [header]="'Join'" 
+        [skills]="'Angular | TypeScript | HTML | CSS | Firebase '" 
+        [description]="'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'" 
+        [image]="'../../assets/img/join.png'">
+    </app-work-left>
+    <app-work-right 
+        [header]="'Pollo Loco'" 
+        [skills]="'JavaScript | HTML | CSS '" 
+        [description]="'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.'" 
+        [image]="'../../assets/img/elpollo.png'">
+    </app-work-right>
+    <app-work-left 
+        [linkGit]="'https://github.com/derSebbl/join'" 
+        [header]="'Simple CRM'" 
+        [skills]="'Angular | Firebase '" 
+        [description]="'A very Simple Customer Relationship Management system working with CRUD functionality.'" 
+        [image]="'../../assets/img/crm.png'">
+    </app-work-left>
+    <app-work-right 
+        [header]="'Pokédex'" 
+        [skills]="'JavaScript | HTML | CSS | Api '" 
+        [description]="'Based on the PokéAPI a simple library that provides and catalogues pokemon information.'" 
+        [image]="'../../assets/img/poke.png'">
+    </app-work-right>
+    <img class="myWorkBig" src="../assets/img/circle/myWorkBig.svg">
+    <img class="myWorkSmall" src="../assets/img/circle/myWorkSmall.svg">
+    <img class="myWorkLeftHalf" src="../assets/img/circle/myWorkLeftHalf.svg">
+    <img class="myWorkRightBig" src="../assets/img/circle/myWorkRightBig.svg">
+    <img class="myWorkExtraSmall" src="../assets/img/circle/myWorkExtraSmall.svg">
+    <img class="myWorkBehindProject" src="../assets/img/circle/myWorkBehindProject.svg">
+    <img class="myWorkFrontProject" src="../assets/img/circle/myWorkFrontProject.svg">
 </div>
-<app-work-left 
-    [linkLive]="'https://sebastian-binz.developerakademie.net/Join/login/login.html'" 
-    [linkGit]="'https://github.com/derSebbl/join'" 
-    [header]="'Join'" 
-    [skills]="'Angular | TypeScript | HTML | CSS | Firebase '" 
-    [description]="'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'" 
-    [image]="'../../assets/img/join.png'">
-</app-work-left>
-<app-work-right 
-    [header]="'Pollo Loco'" 
-    [skills]="'JavaScript | HTML | CSS '" 
-    [description]="'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.'" 
-    [image]="'../../assets/img/elpollo.png'">
-</app-work-right>
-<app-work-left 
-    [linkGit]="'https://github.com/derSebbl/join'" 
-    [header]="'Simple CRM'" 
-    [skills]="'Angular | Firebase '" 
-    [description]="'A very Simple Customer Relationship Management system working with CRUD functionality.'" 
-    [image]="'../../assets/img/crm.png'">
-</app-work-left>
-<app-work-right 
-    [header]="'Pokédex'" 
-    [skills]="'JavaScript | HTML | CSS | Api '" 
-    [description]="'Based on the PokéAPI a simple library that provides and catalogues pokemon information.'" 
-    [image]="'../../assets/img/poke.png'">
-</app-work-right>

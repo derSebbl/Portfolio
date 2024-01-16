@@ -62,3 +62,17 @@
       animation-fill-mode: forwards;
     }
 }
+
+.circleAboutMe {
+  position: absolute;
+  top: 926px;
+  left: 628px;
+  z-index: 9;
+}
+
+.circleAboutMeSmall {
+  position: absolute;
+  top: 1086px;
+  left: 1034px;
+  z-index: 9;
+}
