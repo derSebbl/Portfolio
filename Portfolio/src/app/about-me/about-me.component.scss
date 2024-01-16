@@ -5,7 +5,7 @@
   width: 100%;
   height: 630px;
   gap: 75px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .workTogether {
@@ -24,6 +24,7 @@
 
 .descriptionField {
   display: flex;
+  padding-right: 96px;
   flex-direction: column;
   align-items: center;
   padding-top: 184px;
@@ -63,16 +64,3 @@
     }
 }
 
-.circleAboutMe {
-  position: absolute;
-  top: 926px;
-  left: 628px;
-  z-index: 9;
-}
-
-.circleAboutMeSmall {
-  position: absolute;
-  top: 1086px;
-  left: 1034px;
-  z-index: 9;
-}

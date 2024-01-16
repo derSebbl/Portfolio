@@ -12,9 +12,10 @@
 
 .content {
   display: flex;
-  gap: 151px;
+  max-width: 1920px;
   width: 100%;
-  justify-content: center;
+  gap: 150px;
+  justify-content: space-between;
 }
 
 .contact {
@@ -22,6 +23,7 @@
   width: 100%;
   position: absolute;
   justify-content: flex-start;
+  box-sizing: border-box;
   color: var(--style-2-Style-2-blue-blue, #5988ff);
   text-align: center;
   font-family: Baloo;
@@ -80,6 +82,7 @@
 .inputContainer {
   position: relative;
   padding-top: 139px;
+  padding-right: 108px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -344,17 +347,4 @@
   position: absolute;
   right: 10px;
   top: 10px;
-}
-
-.contactBig {
-  position: absolute;
-  top: 5337px;
-  left: 242px;
-}
-
-.contactSmall {
-  position: absolute;
-  top: 5600px;
-  right: 200px;
-  z-index: 1;
 }

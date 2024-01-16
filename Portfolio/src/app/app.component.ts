@@ -10,12 +10,13 @@ import { WorkRightComponent } from './my-work/work-right/work-right.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MyWorkComponent } from './my-work/my-work.component';
+import { CircleComponent } from './circle/circle.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, LandingPageComponent, NavbarComponent, AboutMeComponent,
-            SkillsComponent, WorkLeftComponent, WorkRightComponent, ContactComponent, FooterComponent, MyWorkComponent],
+            SkillsComponent, WorkLeftComponent, WorkRightComponent, ContactComponent, FooterComponent, MyWorkComponent, CircleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
