@@ -37,7 +37,11 @@
       <div class="ceckboxContainer">
         <div class="boxAndText">
           <div class="box">
-            <input required id="checkbox" type="checkbox" name="privacy" [(ngModel)]="privacy" #privacyField="ngModel">
+            <input required id="checkbox1" type="checkbox" name="privacy" [(ngModel)]="privacy" #privacyField="ngModel" class="checkbox-input">
+            <label for="checkbox1" class="checkbox-label">
+              <img id="checkbox" src="../../assets/img/checkbox_empty.svg" class="checkbox-svg unchecked" [style.display]="privacy ? 'none' : 'block'">
+              <img src="../../assets/img/checkbox_checked.svg" class="checkbox-svg checked" [style.display]="privacy ? 'block' : 'none'">
+            </label>
           </div>
           <label for="checkbox" class="checkboxText">I've read the <div [class.hover-effect]="isHovering" class="privacy">privacy policy </div> and agree to the processing of my data as outlined.</label>
         </div>
