@@ -216,6 +216,7 @@
 .boxAndText {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .checkboxText {
@@ -347,4 +348,19 @@
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.hover-effect {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.box {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  &:hover {
+    border-radius: 50%;
+    background-color: #D4E0FF;
+  } 
 }

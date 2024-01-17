@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common'; 
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +12,8 @@ import { CommonModule } from '@angular/common';
 })
 
 export class ContactComponent {
+  isHovering = false;
+
   name: string = '';
   email: string = '';
   message: string = '';
@@ -42,5 +45,19 @@ export class ContactComponent {
       left: 0,
       behavior: 'smooth'
     });
+  }
+
+  @HostListener('mouseover', ['$event.target.id'])
+  onMouseOver(id: string) {
+    if (id === 'checkbox') {
+      this.isHovering = true;
+    }
+  }
+
+  @HostListener('mouseout', ['$event.target.id'])
+  onMouseOut(id: string) {
+    if (id === 'checkbox') {
+      this.isHovering = false;
+    }
   }
 }

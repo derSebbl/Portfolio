@@ -36,8 +36,10 @@
     <div class="btnContainer">
       <div class="ceckboxContainer">
         <div class="boxAndText">
-          <input required id="checkbox" type="checkbox" name="privacy" [(ngModel)]="privacy" #privacyField="ngModel">
-          <label for="checkbox" class="checkboxText">I've read the <div class="privacy">privacy policy </div> and agree to the processing of my data as outlined.</label>
+          <div class="box">
+            <input required id="checkbox" type="checkbox" name="privacy" [(ngModel)]="privacy" #privacyField="ngModel">
+          </div>
+          <label for="checkbox" class="checkboxText">I've read the <div [class.hover-effect]="isHovering" class="privacy">privacy policy </div> and agree to the processing of my data as outlined.</label>
         </div>
         <div class="errorTxt" *ngIf="privacyField.invalid && privacyField.touched">Please accept the privacy policy.</div>
       </div>
