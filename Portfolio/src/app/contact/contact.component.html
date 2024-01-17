@@ -21,7 +21,7 @@
     </div>
     <div class="mailInput">
       <div class="placeholderText">Your email</div>
-      <input required id="emailField" type="email" name="email" [(ngModel)]="email" #mailField="ngModel">
+      <input required id="emailField" type="email" name="email" [(ngModel)]="email" #mailField="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
       <img class="acceptImg" *ngIf="mailField.valid && mailField.touched" src="../../assets/img/accepted.svg">
       <img class="errorImg" *ngIf="mailField.invalid && mailField.touched" src="../../assets/img/error.svg">
       <div class="errorTxt" *ngIf="mailField.invalid && mailField.touched">Your email is required</div>
