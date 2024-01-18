@@ -28,15 +28,19 @@
   z-index: 9;
 }
 
+.nameAndJob {
+  display: flex;
+    flex-direction: column;
+}
+
 .nameGreeting {
   padding-top: 232px;
-  padding-left: 736px;
   display: flex;
-  max-width: 645px;
-  width: 100%;
+  width: 93.5%;
   height: 61px;
   flex-direction: column;
   justify-content: center;
+  align-items: end;
   flex-shrink: 0;
   color: #5988ff;
   font-family: Montserrat;
@@ -87,22 +91,30 @@
 
 .scrollContainer {
   padding-top: 130px;
+  width: 100%;
 }
 
 .scroll {
-  padding-left: 987px;
+  display: flex;
+  width: 100%;
+  padding-right: 358px;
+  justify-content: flex-end;
   color: var(--style-2-Style-2-blue-blue, #5988ff);
   font-family: Montserrat;
   font-size: 23px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
+  box-sizing: border-box;
 }
 
 .lineContainer {
   padding-top: 10px;
-  padding-left: 1034px;
+  padding-right: 100px;
   display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  box-sizing: border-box;
 }
 
 .line {
@@ -125,6 +137,23 @@
     transition: transform 0.3s ease;
     &:hover {
       transform: translateX(-10px);
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .nameGreeting {
+    font-size: 44px;
+    width: 88%;
+  }
+
+  .jobTitel {
+    > .frontend {
+      font-size: 108px;
+    }
+
+    > .developer {
+      font-size: 98px;
     }
   }
 }
