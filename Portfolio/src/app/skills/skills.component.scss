@@ -36,23 +36,27 @@
   flex-shrink: 0;
   > .skillRowTop {
     display: flex;
-    max-width: 942px;
+    max-width: 1042px;
     width: 100%;
     height: 150px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 128px;
     flex-shrink: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
   }
   > .skillRowBottom {
     display: flex;
-    max-width: 942px;
+    max-width: 1042px;
     width: 100%;
     height: 89px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 128px;
     flex-shrink: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
   }
 }
 
