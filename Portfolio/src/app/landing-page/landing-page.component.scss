@@ -66,7 +66,7 @@
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    color: var(--style-2-Style-2-blue-blue, #5988ff);
+    color: #5988ff;
     font-family: Baloo;
     font-size: 128px;
     font-style: normal;
@@ -85,7 +85,7 @@
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    color: var(--style-2-Style-2-blue-blue, #5988ff);
+    color: #5988ff;
     font-family: Baloo;
     font-size: 118px;
     font-style: normal;
@@ -144,5 +144,33 @@
     &:hover {
       transform: translateX(-10px);
     }
+  }
+}
+
+@media (max-width: 1360px) {
+
+.nameGreeting, .jobTitel {
+    color: #FFF;
+    z-index: 9;
+    align-items: flex-start;
+    padding-right: 0;
+  }
+
+  .jobTitel > .frontend, .jobTitel > .developer {
+    color: #FFF;
+    z-index: 9;
+    align-items: flex-start;
+    padding-right: 0;
+  }
+
+  .scrollContainer {
+    display: none;
+  }
+
+  .picturePerson {
+    height: 547px;
+    top: auto;
+    left: 25%;
+    bottom: 180px;
   }
 }
