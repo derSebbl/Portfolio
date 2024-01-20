@@ -21,8 +21,8 @@ export class SkillsComponent {
       this.el.nativeElement.querySelector('.skillRowTop');
     if (target.innerWidth < 745) {
       if (htmlElement && scrumElement && skillRowBottomElement) {
-        this.renderer.appendChild(skillRowBottomElement, scrumElement);
         this.renderer.appendChild(skillRowBottomElement, htmlElement);
+        this.renderer.appendChild(skillRowBottomElement, scrumElement);
       }
     }
     if (target.innerWidth > 745) {
@@ -31,8 +31,8 @@ export class SkillsComponent {
           skillRowBottomElement.contains(scrumElement) &&
           skillRowBottomElement.contains(htmlElement)
         ) {
-          this.renderer.appendChild(skillRowTopElement, scrumElement);
           this.renderer.appendChild(skillRowTopElement, htmlElement);
+          this.renderer.appendChild(skillRowTopElement, scrumElement);
         }
       }
     }
