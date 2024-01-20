@@ -112,3 +112,23 @@
       animation-fill-mode: forwards;
     }
   }
+
+  @media (max-width: 1455px) {
+    .mainContainer {
+      gap: 0px;
+    }
+  }
+
+  @media (max-width: 1330px) {
+    .mainContainer {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 300px;
+    }
+  
+    .textContainer {
+      padding-left: 0;
+      padding-top: 50px;
+    }
+  } 

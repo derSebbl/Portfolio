@@ -37,9 +37,9 @@
   &:hover {
     width: 640px;
     height: 413px;
-    transition: width 0.2s, height 0.2s; 
-        transform: translateY(-26px);
-}
+    transition: width 0.2s, height 0.2s;
+    transform: translateY(-26px);
+  }
 }
 
 .textContainer {
@@ -111,3 +111,24 @@
     animation-fill-mode: forwards;
   }
 }
+
+@media (max-width: 1455px) {
+  .mainContainer {
+    justify-content: flex-end;
+    gap: 0px;
+  }
+}
+
+@media (max-width: 1330px) {
+  .mainContainer {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 300px;
+  }
+
+  .textContainer {
+    padding-right: 0;
+    padding-top: 50px;
+  }
+} 
