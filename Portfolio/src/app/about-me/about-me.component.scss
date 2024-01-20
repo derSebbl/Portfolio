@@ -32,7 +32,8 @@
 }
 
 .description {
-  width: 571px;
+  max-width: 571px;
+  width: 100%;
   color: var(--Black, #000);
   font-family: Montserrat;
   font-size: 23px;
@@ -62,5 +63,31 @@
       animation: changeBackground 100ms ease-in-out;
       animation-fill-mode: forwards;
     }
+}
+
+@media (max-width: 1390px) {
+  .workTogether{
+    font-size: 100px;
+  }
+
+  .description {
+    font-size: 16px;;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descriptionField {
+    padding: 0px;
+  }
+
+  .workTogether{
+    padding-left: 0;
+  }
+
 }
 
