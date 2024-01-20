@@ -43,7 +43,13 @@
               <img src="../../assets/img/checkbox_checked.svg" class="checkbox-svg checked" [style.display]="privacy ? 'block' : 'none'">
             </label>
           </div>
-          <label for="checkbox" class="checkboxText">I've read the <div [class.hover-effect]="isHovering" class="privacy">privacy policy </div> and agree to the processing of my data as outlined.</label>
+          <label for="checkbox" class="checkboxText">
+            <span>
+              I've read the 
+              <span [class.hover-effect]="isHovering" class="privacy">privacy policy</span>
+              and agree to the processing of my data as outlined.
+            </span>
+          </label>
         </div>
         <div class="errorTxt" *ngIf="privacyField.invalid && privacyField.touched">Please accept the privacy policy.</div>
       </div>
