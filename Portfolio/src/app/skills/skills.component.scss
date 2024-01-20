@@ -27,7 +27,8 @@
 .skillIcons {
   padding-top: 17px;
   display: flex;
-  width: 957px;
+  max-width: 957px;
+  width: 100%;
   height: 340px;
   flex-direction: column;
   align-items: flex-start;
@@ -35,18 +36,20 @@
   flex-shrink: 0;
   > .skillRowTop {
     display: flex;
-    width: 942px;
+    max-width: 942px;
+    width: 100%;
     height: 150px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
     gap: 128px;
     flex-shrink: 0;
   }
   > .skillRowBottom {
     display: flex;
-    width: 942px;
+    max-width: 942px;
+    width: 100%;
     height: 89px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
     gap: 128px;
     flex-shrink: 0;
