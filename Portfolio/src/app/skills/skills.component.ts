@@ -19,26 +19,19 @@ export class SkillsComponent {
       this.el.nativeElement.querySelector('.skillRowBottom');
     const skillRowTopElement =
       this.el.nativeElement.querySelector('.skillRowTop');
-    if (target.innerWidth < 645) {
+    if (target.innerWidth < 745) {
       if (htmlElement && scrumElement && skillRowBottomElement) {
         this.renderer.appendChild(skillRowBottomElement, scrumElement);
-      }
-    }
-    if (target.innerWidth > 645) {
-      if (htmlElement && scrumElement && skillRowBottomElement) {
-        if (skillRowBottomElement.contains(scrumElement)) {
-          this.renderer.appendChild(skillRowTopElement, scrumElement);
-        }
-      }
-    }
-    if (target.innerWidth < 534) {
-      if (htmlElement && scrumElement && skillRowBottomElement) {
         this.renderer.appendChild(skillRowBottomElement, htmlElement);
       }
     }
-    if (target.innerWidth > 534) {
+    if (target.innerWidth > 745) {
       if (htmlElement && scrumElement && skillRowBottomElement) {
-        if (skillRowBottomElement.contains(htmlElement)) {
+        if (
+          skillRowBottomElement.contains(scrumElement) &&
+          skillRowBottomElement.contains(htmlElement)
+        ) {
+          this.renderer.appendChild(skillRowTopElement, scrumElement);
           this.renderer.appendChild(skillRowTopElement, htmlElement);
         }
       }
