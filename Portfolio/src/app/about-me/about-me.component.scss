@@ -71,7 +71,7 @@
   }
 
   .description {
-    font-size: 16px;;
+    font-size: 23px;
   }
 }
 
@@ -89,6 +89,24 @@
   .workTogether{
     padding-left: 0;
   }
+}
 
+@media (max-width: 700px) {
+
+  .mainContainer {
+    gap: 35px;
+  }
+
+  .workTogether{
+    font-size: 64px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .descriptionField {
+    padding-right: 27px;
+    padding-left: 25px;
+    gap: 34px;
+  }
 }
 
