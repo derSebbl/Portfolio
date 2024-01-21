@@ -60,3 +60,26 @@
     }
   }
 }
+
+  .burgerMenu {
+  display: none;
+}
+
+@media (max-width: 1124px) {
+
+  .navbar {
+    padding: 25px 34px 25px 34px;
+  }
+
+  .navbar > .links {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: flex;
+    flex-shrink: 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
