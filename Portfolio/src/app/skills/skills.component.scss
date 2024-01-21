@@ -31,14 +31,14 @@
   width: 100%;
   min-height: 340px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 47px;
   flex-shrink: 0;
   > .skillRowTop {
     display: flex;
     max-width: 1042px;
     width: 100%;
-    gap: 50px;
+    gap: 25px;
     justify-content: space-between;
     align-items: flex-start;
     flex-shrink: 0;
@@ -51,9 +51,9 @@
     display: flex;
     max-width: 1042px;
     width: 100%;
-    gap: 50px;
+    gap: 25px;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: baseline;
     flex-shrink: 0;
     padding-left: 50px;
     padding-right: 50px;
@@ -93,5 +93,29 @@
   }
   > span {
     text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .icons {
+    height: 100px;
+    width: 75px;
+  }
+
+  .header {
+    padding-bottom: 35px;
+    font-size: 64px;
+  }
+}
+
+  @media (max-width: 590px) {
+  .skillIcons >.skillRowBottom {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 460px) {
+  .skillIcons >.skillRowBottom {
+    gap: 25px;
   }
 }

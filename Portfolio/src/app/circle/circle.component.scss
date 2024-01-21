@@ -92,6 +92,17 @@
   }
 }
 
+@media (max-width: 1100px) {
+
+  .myWorkBig {
+    display: none;
+  }
+  .myWorkSmall {
+    display: none;
+  }
+
+} 
+
 @media (max-width: 700px) {
   .circleFrontPage {
     overflow: hidden;

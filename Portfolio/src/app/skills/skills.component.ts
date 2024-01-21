@@ -15,17 +15,18 @@ export class SkillsComponent {
     const target = event.target as Window;
     const htmlElement = this.el.nativeElement.querySelector('#html');
     const scrumElement = this.el.nativeElement.querySelector('#scrum');
+    const jsElement = this.el.nativeElement.querySelector('#js');
     const skillRowBottomElement =
       this.el.nativeElement.querySelector('.skillRowBottom');
     const skillRowTopElement =
       this.el.nativeElement.querySelector('.skillRowTop');
-    if (target.innerWidth < 745) {
+    if (target.innerWidth <= 590) {
       if (htmlElement && scrumElement && skillRowBottomElement) {
         this.renderer.appendChild(skillRowBottomElement, htmlElement);
         this.renderer.appendChild(skillRowBottomElement, scrumElement);
       }
     }
-    if (target.innerWidth > 745) {
+    if (target.innerWidth >= 590) {
       if (htmlElement && scrumElement && skillRowBottomElement) {
         if (
           skillRowBottomElement.contains(scrumElement) &&
@@ -33,6 +34,19 @@ export class SkillsComponent {
         ) {
           this.renderer.appendChild(skillRowTopElement, htmlElement);
           this.renderer.appendChild(skillRowTopElement, scrumElement);
+        }
+      }
+    }
+
+    if (target.innerWidth <= 390) {
+      if (jsElement && skillRowBottomElement) {
+        this.renderer.appendChild(skillRowBottomElement, jsElement);
+      }
+    }
+    if (target.innerWidth >= 390) {
+      if (jsElement && skillRowBottomElement) {
+        if (skillRowBottomElement.contains(jsElement)) {
+          this.renderer.appendChild(skillRowTopElement, jsElement);
         }
       }
     }
