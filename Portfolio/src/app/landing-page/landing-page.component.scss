@@ -196,3 +196,23 @@
     height: auto;
   }
 }
+
+@media (max-width: 460px) {
+
+  .picturePerson {
+    height: 400px;
+    top: 628px;
+  }
+
+  .jobTitel > .developer {
+    font-size: 60px;
+  }
+
+  .jobTitel > .frontend {
+    font-size: 60px;
+  }
+
+  .nameAndJob {
+    padding-top: 70px;
+  }
+}
