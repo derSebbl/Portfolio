@@ -1,6 +1,7 @@
 <div class="mainContainer">
     <div class="imgContainer">
         <div (click)="openWork()" class="img" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
+        <img class="mobileImg" src="{{ image }}">
     </div>
     <div class="textContainer">
         <div class="text">
@@ -9,5 +10,6 @@
             <span class="description">{{ description }}</span>
         </div>
         <div (click)="openGit()" id="gitBtn">Github</div>
+        <div (click)="openWork()" id="liveTestBtn"></div>
     </div>
 </div>

@@ -41,6 +41,19 @@
             transform: translateY(-26px);
     }
   }
+
+  .mobileImg {
+    display: none;
+    width: 620px;
+    height: 393px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 9;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  }
   
   .textContainer {
     display: flex;
@@ -113,6 +126,10 @@
     }
   }
 
+  #liveTestBtn {
+    display: none;
+  }
+
   @media (max-width: 1455px) {
     .mainContainer {
       gap: 0px;
@@ -130,5 +147,13 @@
     .textContainer {
       padding-left: 0;
       padding-top: 50px;
+    }
+
+    .img {
+      display: none;
+    }
+  
+    .mobileImg {
+      display: flex;
     }
   } 
