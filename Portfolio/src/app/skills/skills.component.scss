@@ -114,8 +114,14 @@
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 433px) {
+  .skillIcons >.skillRowTop {
+    gap: 47px;
+  }
+}
+
+@media (max-width: 469px) {
   .skillIcons >.skillRowBottom {
-    gap: 25px;
+    gap: 47px;
   }
 }

@@ -6,10 +6,9 @@
             <span class="description">{{ description }}</span>
         </div>
         <div (click)="openGit()" id="gitBtn">Github</div>
-        <div (click)="openWork()" id="liveTestBtn"></div>
+        <div (click)="openWork()" id="liveTestBtn">Live test</div>
     </div>
     <div class="imgContainer">
         <div (click)="openWork()" class="img" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
-        <img class="mobileImg" src="{{ image }}">
     </div>
 </div>

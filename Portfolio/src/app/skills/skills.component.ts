@@ -38,12 +38,12 @@ export class SkillsComponent {
       }
     }
 
-    if (target.innerWidth <= 375) {
+    if (target.innerWidth <= 433) {
       if (jsElement && skillRowBottomElement) {
         this.renderer.appendChild(skillRowBottomElement, jsElement);
       }
     }
-    if (target.innerWidth >= 375) {
+    if (target.innerWidth >= 433) {
       if (jsElement && skillRowBottomElement) {
         if (skillRowBottomElement.contains(jsElement)) {
           this.renderer.appendChild(skillRowTopElement, jsElement);
