@@ -5,8 +5,10 @@
             <span class="skills">{{ skills }}</span>
             <span class="description">{{ description }}</span>
         </div>
-        <div (click)="openGit()" id="gitBtn">Github</div>
-        <div (click)="openWork()" id="liveTestBtn">Live test</div>
+        <div class="btnContainer">
+            <div (click)="openWork()" id="liveTestBtn">Live test</div>
+            <div (click)="openGit()" id="gitBtn">Github</div>
+        </div>
     </div>
     <div class="imgContainer">
         <div (click)="openWork()" class="img" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
