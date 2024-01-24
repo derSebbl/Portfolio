@@ -53,7 +53,9 @@
         </div>
         <div class="errorTxt" *ngIf="privacyField.invalid && privacyField.touched">Please accept the privacy policy.</div>
       </div>
-      <button id="btnSend" [disabled]="!contactForm.valid" type="submit">Say hello :) </button>
+      <div style="height: 62px;">
+        <button id="btnSend" [disabled]="!contactForm.valid" type="submit">Say hello :) </button>
+      </div>
     </div>
   </form>
   </div>
