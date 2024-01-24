@@ -38,7 +38,9 @@
 .problemHeader {
   padding-top: 139px;
   padding-left: 91px;
-  width: 473px;
+  max-width: 473px;
+  width: 100%;
+  box-sizing: border-box;
   color: var(--style-2-Style-2-blue-blue, #5988ff);
   font-family: Montserrat;
   font-size: 32px;
@@ -50,7 +52,9 @@
 .description {
   padding-top: 35px;
   padding-left: 92px;
-  width: 473px;
+  max-width: 473px;
+  width: 100%;
+  box-sizing: border-box;
   color: var(--Black, #000);
   font-family: Montserrat;
   font-size: 16px;
@@ -62,7 +66,9 @@
 .needContact {
   padding-top: 25px;
   padding-left: 92px;
-  width: 473px;
+  max-width: 473px;
+  width: 100%;
+  box-sizing: border-box;
   color: var(--style-2-Style-2-blue-blue, #5988ff);
   font-family: Montserrat;
   font-size: 16px;
@@ -382,22 +388,39 @@
     height: auto;
   }
 
-  .content {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .inputContainer {
     padding-top: 20px;
     padding-right: 0;
-  }
-
-  .contact {
-    justify-content: center;
-    padding-left: 0;
   }
 
   .ceckboxContainer {
     padding-bottom: 20px;
   }
 }
+
+@media (max-width: 1000px) {
+
+  .contact {
+    font-size: 64px;
+  }
+
+  .problemHeader {
+    padding-top: 100px;
+    font-size: 24px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .inputContainer {
+    padding-left: 92px;
+    align-items: flex-start;
+  }
+}
+
+
+// Paddings noch anpassen und Schriftgrößen berücksichtigen 
+// hovern über nachricht senden verschiebt rest der seite 
+// Pfeil "back to top" noch anpassen 
+// about me beim hovern über nachricht senden button verschiebt sich die website
