@@ -64,3 +64,17 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .mainContainer {
+    padding: 66px 0px 73px 0px;
+  }
+  .topRow {
+    flex-direction: column;
+    gap: 26px;
+  }
+  .imprint {
+    width: auto;
+    padding-top: 23px;
+  }
+}
