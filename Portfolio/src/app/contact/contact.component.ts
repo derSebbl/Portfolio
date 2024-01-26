@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common'; 
 import { HostListener } from '@angular/core';
@@ -12,6 +12,8 @@ import { HostListener } from '@angular/core';
 })
 
 export class ContactComponent {
+@ViewChild('contactForm') contactForm: any;
+
   isHovering = false;
 
   name: string = '';
@@ -19,6 +21,8 @@ export class ContactComponent {
   message: string = '';
   nameField: any;
   privacy: any;
+  textField: any;
+  mailField: any;
 
   ngOnInit() {
     this.checkInputValues();
@@ -59,5 +63,22 @@ export class ContactComponent {
     if (id === 'checkbox') {
       this.isHovering = false;
     }
+  }
+
+  async sendMail() {
+    //http://sebastianbinz.com/send_mail/send_mail.php
+    console.log('sendMail');
+
+    let nameField = document.getElementById('nameField') as HTMLInputElement;
+    let textField = document.getElementById('textField') as HTMLInputElement;
+
+    let fd = new FormData();
+    fd.append('name', nameField?.value); // Add null check before accessing the value
+    fd.append('text', textField?.value); // Add null check before accessing the value
+
+    await fetch('http://sebastianbinz.com/send_mail/send_mail.php', {
+      method: 'POST',
+      body: fd
+    })
   }
 }

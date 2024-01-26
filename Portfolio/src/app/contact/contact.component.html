@@ -11,7 +11,7 @@
       Need a Frontend developer? <span>Contact me!</span>
     </div>
   </div> 
-  <form class="inputContainer" #contactForm="ngForm">
+  <form class="inputContainer" (submit)="sendMail()" #contactForm="ngForm">
     <div class="nameInput">
       <div class="placeholderText"> Your name </div>
       <input required id="nameField" type="text" name="name" [(ngModel)]="name" #nameField="ngModel">
