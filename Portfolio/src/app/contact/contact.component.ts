@@ -71,10 +71,12 @@ export class ContactComponent {
 
     let nameField = document.getElementById('nameField') as HTMLInputElement;
     let textField = document.getElementById('textField') as HTMLInputElement;
+    let mailField = document.getElementById('emailField') as HTMLInputElement;
 
     let fd = new FormData();
-    fd.append('name', nameField?.value); // Add null check before accessing the value
-    fd.append('text', textField?.value); // Add null check before accessing the value
+    fd.append('name', nameField?.value); 
+    fd.append('text', textField?.value); 
+    fd.append('email', mailField?.value); 
 
     await fetch('http://sebastianbinz.com/send_mail/send_mail.php', {
       method: 'POST',
