@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgModel } from '@angular/forms';
 import { CommonModule } from '@angular/common'; 
 import { HostListener } from '@angular/core';
 
@@ -13,6 +13,9 @@ import { HostListener } from '@angular/core';
 
 export class ContactComponent {
   @ViewChild('contactForm') contactForm: any;
+  @ViewChild('mailField') mailField: any;
+  @ViewChild('textField') textField: any;
+  @ViewChild('nameField') nameField: any;
 
   emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{1,}$';
 
@@ -21,10 +24,8 @@ export class ContactComponent {
   name: string = '';
   email: string = '';
   message: string = '';
-  nameField: any;
   privacy: any;
-  textField: any;
-  mailField: any;
+  
 
   ngOnInit() {
     this.checkInputValues();
@@ -88,5 +89,16 @@ export class ContactComponent {
     } catch (error) {
       console.error('Fehler beim Senden der Mail:', error);
     }
+
+    this.clearContactValues();
   } 
+
+
+clearContactValues() {
+  this.mailField.reset();
+  this.textField.reset();
+  this.nameField.reset();
+  this.privacy = false;
+}
+
 }

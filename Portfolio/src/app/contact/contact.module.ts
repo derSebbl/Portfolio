@@ -9,7 +9,8 @@ import { ContactComponent } from './contact.component';
     imports: [
         CommonModule,
         FormsModule,
-        ContactComponent
+        ContactComponent,
+        NgModule
     ],
     exports: [
         ContactComponent

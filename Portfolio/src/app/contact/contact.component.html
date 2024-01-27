@@ -14,24 +14,24 @@
   <form class="inputContainer" (submit)="sendMail()" #contactForm="ngForm">
     <div class="nameInput">
       <div class="placeholderText"> Your name </div>
-      <input required id="nameField" type="text" name="name" [(ngModel)]="name" #nameField="ngModel">
-      <img class="acceptImg" *ngIf="nameField.valid && nameField.touched" src="../../assets/img/accepted.svg">
-      <img class="errorImg" *ngIf="nameField.invalid && nameField.touched" src="../../assets/img/error.svg">
-      <div class="errorTxt" *ngIf="nameField.invalid && nameField.touched">Your name is required </div>
+      <input required minlength="3" id="nameField" type="text" name="name" [(ngModel)]="name" #nameField="ngModel">
+      <img class="acceptImg" *ngIf="nameField.valid && nameField.touched && name" src="../../assets/img/accepted.svg">
+      <img class="errorImg" *ngIf="nameField.invalid && nameField.touched && name" src="../../assets/img/error.svg">
+      <div class="errorTxt" *ngIf="nameField.invalid && nameField.touched && name">Your name is required </div>
     </div>
     <div class="mailInput">
       <div class="placeholderText">Your email</div>
-      <input required id="emailField" type="email" name="email" [(ngModel)]="email" #mailField="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,}$">
-      <img class="acceptImg" *ngIf="mailField.valid && mailField.touched" src="../../assets/img/accepted.svg">
-      <img class="errorImg" *ngIf="mailField.invalid && mailField.touched" src="../../assets/img/error.svg">
-      <div class="errorTxt" *ngIf="mailField.invalid && mailField.touched">Your email is required</div>
+      <input required id="emailField" type="email" name="email" [(ngModel)]="email" #mailField="ngModel" [pattern]="emailPattern">
+      <img class="acceptImg" *ngIf="mailField.valid && mailField.touched && email" src="../../assets/img/accepted.svg">
+      <img class="errorImg" *ngIf="mailField.invalid && mailField.touched && email" src="../../assets/img/error.svg">
+      <div class="errorTxt" *ngIf="mailField.invalid && mailField.touched && email">Your email is required</div>
     </div>
     <div class="textInput">
       <div class="placeholderTextMsg">Your message</div>
-      <textarea required id="textField" type="text" name="message" [(ngModel)]="message" #textField="ngModel"></textarea>
-      <img class="acceptImg" *ngIf="textField.valid && textField.touched" src="../../assets/img/accepted.svg">
-      <img class="errorImg" *ngIf="textField.invalid && textField.touched" src="../../assets/img/error.svg">
-      <div class="errorTxt" *ngIf="textField.invalid && textField.touched">Your message is empty</div>
+      <textarea required minlength="10" id="textField" type="text" name="message" [(ngModel)]="message" #textField="ngModel"></textarea>
+      <img class="acceptImg" *ngIf="textField.valid && textField.touched && message" src="../../assets/img/accepted.svg">
+      <img class="errorImg" *ngIf="textField.invalid && textField.touched && message" src="../../assets/img/error.svg">
+      <div class="errorTxt" *ngIf="textField.invalid && textField.touched && message">Your message is empty</div>
     </div>
     <div class="btnContainer">
       <div class="ceckboxContainer">
