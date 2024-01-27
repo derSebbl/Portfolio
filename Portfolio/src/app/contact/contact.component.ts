@@ -12,7 +12,9 @@ import { HostListener } from '@angular/core';
 })
 
 export class ContactComponent {
-@ViewChild('contactForm') contactForm: any;
+  @ViewChild('contactForm') contactForm: any;
+
+  emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{1,}$';
 
   isHovering = false;
 
@@ -78,9 +80,13 @@ export class ContactComponent {
     fd.append('text', textField?.value); 
     fd.append('email', mailField?.value); 
 
-    await fetch('http://sebastianbinz.com/send_mail/send_mail.php', {
-      method: 'POST',
-      body: fd
-    })
-  }
+    try {
+      await fetch('http://sebastianbinz.com/send_mail/send_mail.php', {
+        method: 'POST',
+        body: fd
+      })
+    } catch (error) {
+      console.error('Fehler beim Senden der Mail:', error);
+    }
+  } 
 }
