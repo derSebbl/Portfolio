@@ -69,9 +69,6 @@ export class ContactComponent {
   }
 
   async sendMail() {
-    //http://sebastianbinz.com/send_mail/send_mail.php
-    console.log('sendMail');
-
     let nameField = document.getElementById('nameField') as HTMLInputElement;
     let textField = document.getElementById('textField') as HTMLInputElement;
     let mailField = document.getElementById('emailField') as HTMLInputElement;
@@ -89,7 +86,6 @@ export class ContactComponent {
     } catch (error) {
       console.error('Fehler beim Senden der Mail:', error);
     }
-
     this.clearContactValues();
   } 
 
