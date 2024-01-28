@@ -68,33 +68,48 @@ export class ContactComponent {
     }
   }
 
-  async sendMail() {
-    let nameField = document.getElementById('nameField') as HTMLInputElement;
-    let textField = document.getElementById('textField') as HTMLInputElement;
-    let mailField = document.getElementById('emailField') as HTMLInputElement;
 
-    let fd = new FormData();
-    fd.append('name', nameField?.value); 
-    fd.append('text', textField?.value); 
-    fd.append('email', mailField?.value); 
+//NEW//
+  
+mailTest = false;
 
-    try {
-      await fetch('http://sebastianbinz.com/send_mail/send_mail.php', {
-        method: 'POST',
-        body: fd
-      })
-    } catch (error) {
-      console.error('Fehler beim Senden der Mail:', error);
+  contactData = {
+    name: '',
+    email: '',
+    message: '',
+  };
+
+  post = {
+    endPoint: 'http://sebastianbinz.com/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  onSubmit(ngForm: any) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            ngForm.resetForm();
+            
+
+
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      ngForm.resetForm();
+      console.log('ohne mail aber abgeschlossen');
     }
-    this.clearContactValues();
-  } 
-
-
-clearContactValues() {
-  this.mailField.reset();
-  this.textField.reset();
-  this.nameField.reset();
-  this.privacy = false;
-}
+  }
 
 }
