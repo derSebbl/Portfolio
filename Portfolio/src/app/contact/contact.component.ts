@@ -69,7 +69,7 @@ export class ContactComponent {
 
 //sendMail//
   
-mailTest = true;
+mailTest = false;
 
   contactData = {
     name: '',
