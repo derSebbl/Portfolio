@@ -1,7 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, inject } from '@angular/core';
 import { FormsModule, NgModel } from '@angular/forms';
 import { CommonModule } from '@angular/common'; 
 import { HostListener } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -12,14 +13,11 @@ import { HostListener } from '@angular/core';
 })
 
 export class ContactComponent {
-  @ViewChild('contactForm') contactForm: any;
-  @ViewChild('mailField') mailField: any;
-  @ViewChild('textField') textField: any;
-  @ViewChild('nameField') nameField: any;
-
   emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{1,}$';
 
   isHovering = false;
+
+  http = inject(HttpClient);
 
   name: string = '';
   email: string = '';
@@ -69,9 +67,9 @@ export class ContactComponent {
   }
 
 
-//NEW//
+//sendMail//
   
-mailTest = false;
+mailTest = true;
 
   contactData = {
     name: '',
@@ -97,9 +95,6 @@ mailTest = false;
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
-            
-
-
           },
           error: (error) => {
             console.error(error);
