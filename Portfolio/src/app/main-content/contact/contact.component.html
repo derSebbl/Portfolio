@@ -15,22 +15,22 @@
     <div class="nameInput">
       <div class="placeholderText"> Your name </div>
       <input required minlength="3" id="nameField" type="text" name="name" [(ngModel)]="contactData.name" #nameField="ngModel">
-      <img class="acceptImg" *ngIf="nameField.valid && nameField.touched" src="../../assets/img/accepted.svg">
-      <img class="errorImg" *ngIf="nameField.invalid && nameField.touched" src="../../assets/img/error.svg">
+      <img class="acceptImg" *ngIf="nameField.valid && nameField.touched" src="../../../assets/img/accepted.svg">
+      <img class="errorImg" *ngIf="nameField.invalid && nameField.touched" src="../../../assets/img/error.svg">
       <div class="errorTxt" *ngIf="nameField.invalid && nameField.touched">Your name is required </div>
     </div>
     <div class="mailInput">
       <div class="placeholderText">Your email</div>
       <input required id="emailField" type="email" name="email" [(ngModel)]="contactData.email" #mailField="ngModel" [pattern]="emailPattern">
-      <img class="acceptImg" *ngIf="mailField.valid && mailField.touched" src="../../assets/img/accepted.svg">
-      <img class="errorImg" *ngIf="mailField.invalid && mailField.touched" src="../../assets/img/error.svg">
+      <img class="acceptImg" *ngIf="mailField.valid && mailField.touched" src="../../../assets/img/accepted.svg">
+      <img class="errorImg" *ngIf="mailField.invalid && mailField.touched" src="../../../assets/img/error.svg">
       <div class="errorTxt" *ngIf="mailField.invalid && mailField.touched">Your email is required</div>
     </div>
     <div class="textInput">
       <div class="placeholderTextMsg">Your message</div>
       <textarea required minlength="10" id="textField" type="text" name="message" [(ngModel)]="contactData.message" #textField="ngModel"></textarea>
-      <img class="acceptImg" *ngIf="textField.valid && textField.touched" src="../../assets/img/accepted.svg">
-      <img class="errorImg" *ngIf="textField.invalid && textField.touched" src="../../assets/img/error.svg">
+      <img class="acceptImg" *ngIf="textField.valid && textField.touched" src="../../../assets/img/accepted.svg">
+      <img class="errorImg" *ngIf="textField.invalid && textField.touched" src="../../../assets/img/error.svg">
       <div class="errorTxt" *ngIf="textField.invalid && textField.touched">Your message is empty</div>
     </div>
     <div class="btnContainer">
@@ -39,8 +39,8 @@
           <div class="box">
             <input required id="checkbox1" type="checkbox" name="privacy" [(ngModel)]="privacy" #privacyField="ngModel" class="checkbox-input">
             <label for="checkbox1" class="checkbox-label">
-              <img id="checkbox" src="../../assets/img/checkbox_empty.svg" class="checkbox-svg unchecked" [style.display]="privacy ? 'none' : 'block'">
-              <img src="../../assets/img/checkbox_checked.svg" class="checkbox-svg checked" [style.display]="privacy ? 'block' : 'none'">
+              <img id="checkbox" src="../../../assets/img/checkbox_empty.svg" class="checkbox-svg unchecked" [style.display]="privacy ? 'none' : 'block'">
+              <img src="../../../assets/img/checkbox_checked.svg" class="checkbox-svg checked" [style.display]="privacy ? 'block' : 'none'">
             </label>
           </div>
           <label for="checkbox" class="checkboxText">

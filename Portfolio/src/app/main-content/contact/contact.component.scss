@@ -292,8 +292,8 @@
   position: absolute;
   bottom: 50px;
   left: 10%;
-  display: flex;
   box-sizing: border-box;
+  display: flex;
   width: 39px;
   height: 39px;
   padding: 8px 8px 7px 7px;
@@ -301,26 +301,17 @@
   align-items: center;
   flex-shrink: 0;
   border-radius: 41px;
-  background: url(../../assets/img/arrow-back-top.svg),
-    var(
-      --style-2-Style-2-blue-GR,
-      radial-gradient(
-        91.12% 91.12% at 19.79% 22.42%,
-        #5988ff 6.25%,
-        #5988ff 51.56%,
-        #0043f0 100%
-      )
-    );
-  background-size: 50% 50% cover;
+  background: url(../../../assets/img/arrow-back-top.svg),
+  var(--style-2-Style-2-blue-GR, radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%));
   background-position: center;
   background-repeat: no-repeat;
-}
+  }
 
 .arrow:hover {
   cursor: pointer;
   border: 2px solid var(--style-2-Style-2-blue-GR, #5988ff);
   background: none;
-  background-image: url(../../assets/img/arrow-back-top-hover.svg);
+  background-image: url(../../../assets/img/arrow-back-top-hover.svg);
   background-size: 50% 50% cover;
   background-position: center;
   background-repeat: no-repeat;

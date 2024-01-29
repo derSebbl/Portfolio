@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { NavbarComponent } from './landing-page/navbar/navbar.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { SkillsComponent } from './skills/skills.component';
-import { WorkLeftComponent } from './my-work/work-left/work-left.component';
-import { WorkRightComponent } from './my-work/work-right/work-right.component';
-import { ContactComponent } from './contact/contact.component';
+import { LandingPageComponent } from './main-content/landing-page/landing-page.component';
+import { NavbarComponent } from './main-content/landing-page/navbar/navbar.component';
+import { AboutMeComponent } from './main-content/about-me/about-me.component';
+import { SkillsComponent } from './main-content/skills/skills.component';
+import { WorkLeftComponent } from './main-content/my-work/work-left/work-left.component';
+import { WorkRightComponent } from './main-content/my-work/work-right/work-right.component';
+import { ContactComponent } from './main-content/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { MyWorkComponent } from './my-work/my-work.component';
+import { MyWorkComponent } from './main-content/my-work/my-work.component';
 import { CircleComponent } from './circle/circle.component';
 
 @Component({
