@@ -1,3 +1,60 @@
 .mainContainer {
     background: linear-gradient(180deg, #fff 12.89%, #eaf0ff 91.39%);
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
 }
+
+.arrow {
+    position: absolute;
+    top: 80px;
+    right: 15%;
+    box-sizing: border-box;
+    display: flex;
+    width: 39px;
+    height: 39px;
+    padding: 8px 8px 7px 7px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 41px;
+    background: url(../../assets/img/arrow-back-top.svg),
+    var(--style-2-Style-2-blue-GR, radial-gradient(91.12% 91.12% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%));
+    background-position: center;
+    background-repeat: no-repeat;
+    rotate: 270deg;
+    }
+  
+  .arrow:hover {
+    cursor: pointer;
+    border: 2px solid var(--style-2-Style-2-blue-GR, #5988ff);
+    background: none;
+    background-image: url(../../assets/img/arrow-back-top-hover.svg);
+    background-size: 50% 50% cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .flex {
+    width: 100%;
+    text-wrap: wrap;
+  }
+
+  @media (max-width: 800px) {
+    .mainContainer {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .arrow {
+      right: 20px;
+    }
+  }
