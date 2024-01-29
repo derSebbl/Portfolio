@@ -41,20 +41,9 @@
     background-repeat: no-repeat;
   }
 
-  .flex {
-    width: 100%;
-    text-wrap: wrap;
-  }
-
   @media (max-width: 800px) {
     .mainContainer {
       padding-left: 20px;
       padding-right: 20px;
-    }
-  }
-
-  @media (max-width: 450px) {
-    .arrow {
-      right: 20px;
     }
   }
