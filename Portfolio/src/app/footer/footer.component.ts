@@ -13,4 +13,8 @@ export class FooterComponent {
     window.open('https://github.com/derSebbl', '_blank');
 }
 
+openLinkedIn() {
+  window.open('https://www.linkedin.com/in/sebastian-binz-00a2502a8/', '_blank');
+}
+
 }
