@@ -10,7 +10,7 @@ import { WorkRightComponent } from './main-content/my-work/work-right/work-right
 import { ContactComponent } from './main-content/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MyWorkComponent } from './main-content/my-work/my-work.component';
-import { CircleComponent } from './circle/circle.component';
+import { CircleComponent } from './main-content/circle/circle.component';
 
 @Component({
   selector: 'app-root',

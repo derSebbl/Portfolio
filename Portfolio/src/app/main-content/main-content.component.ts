@@ -4,12 +4,13 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { CircleComponent } from './circle/circle.component';
 
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [MyWorkComponent, AboutMeComponent, ContactComponent, SkillsComponent, LandingPageComponent],
+  imports: [MyWorkComponent, AboutMeComponent, ContactComponent, SkillsComponent, LandingPageComponent, CircleComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
