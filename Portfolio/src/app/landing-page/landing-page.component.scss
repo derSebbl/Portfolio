@@ -142,6 +142,14 @@
   align-items: flex-start;
   gap: 25px;
   z-index: 10;
+  > a {
+    transition: transform 0.3s ease;
+    cursor: default;
+    &:hover {
+      transform: translateX(-10px);
+      cursor: default;
+    }
+  }
   > img {
     transition: transform 0.3s ease;
     &:hover {

@@ -53,6 +53,13 @@
   align-items: center;
   gap: 42px;
   flex-shrink: 0;
+  > a {
+    transition: transform 0.2s ease;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.5);
+    }
+  }
   > img {
     width: 30px;
     height: 29.259px;
