@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
@@ -10,6 +10,21 @@ import { NavbarComponent } from './navbar/navbar.component';
 })
 export class LandingPageComponent {
 
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
+
+  onBurgerClicked() {
+    console.log('Burger menu toggled');
+    const burgerMenu = this.el.nativeElement.querySelector('#burgerMenu');
+
+    if (burgerMenu) {
+      const display = window.getComputedStyle(burgerMenu).display;
+
+      if (display === 'none') {
+        this.renderer.setStyle(burgerMenu, 'display', 'flex');
+      }
+    } 
+  }
+
   openGitProfile() {
     window.open('https://github.com/derSebbl', '_blank');
 }
@@ -18,4 +33,11 @@ openLinkedIn() {
   window.open('https://www.linkedin.com/in/sebastian-binz-00a2502a8/', '_blank');
 }
 
+closeBurgerMenu() {
+  const burgerMenu = this.el.nativeElement.querySelector('#burgerMenu');
+
+  if (burgerMenu) {
+    this.renderer.setStyle(burgerMenu, 'display', 'none');
+  }
+}
 }

@@ -1,6 +1,6 @@
 <div class="mainContainer">
   <img class="picturePerson" src="../../../assets/img/Person.png" />
-  <app-navbar class="navBar"></app-navbar>
+  <app-navbar (burgerClicked)="onBurgerClicked()" class="navBar"></app-navbar>
   <div class="nameAndJob">
     <div class="nameGreeting">Hello! I am Sofia</div>
     <div class="jobTitel">
@@ -24,20 +24,20 @@
   <div id="burgerMenu" style="display: none;">
     <div class="headerBurger">
       <img src="../../../assets/img/logoBurger.svg">
-      <img src="../../../assets/img/closeBurger.svg">
+      <img class="closeBurger" (click)="closeBurgerMenu()" src="../../../assets/img/closeBurger.svg">
     </div>
     <div class="linksBurger">
       <div class="aboutMe">
-        <a class="link" href="#aboutMe">About me</a>
+        <a (click)="closeBurgerMenu()" class="link" href="#aboutMe">About me</a>
       </div>
       <div class="skills">
-        <a class="link"  href="#skills">Skill set</a>
+        <a (click)="closeBurgerMenu()" class="link"  href="#skills">Skill set</a>
       </div>
       <div class="myWork">
-        <a class="link"  href="#work">My work</a>
+        <a (click)="closeBurgerMenu()" class="link"  href="#work">My work</a>
       </div>
       <div class="contact">
-        <a class="link"  href="#contact">Contact</a>
+        <a (click)="closeBurgerMenu()" class="link"  href="#contact">Contact</a>
       </div>
     </div>
   </div>
