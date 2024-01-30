@@ -16,6 +16,7 @@
   width: 100%;
   gap: 20px;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .contact {
@@ -390,7 +391,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 655px) {
 
   .contact {
     font-size: 64px;

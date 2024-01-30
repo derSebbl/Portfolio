@@ -158,6 +158,98 @@
   }
 }
 
+#burgerMenu {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8) 12.89%,
+    rgba(234, 240, 255, 0.8) 91.39%
+  );
+  width: 100%;
+  height: 100vh;
+  gap: 147px;
+
+  > .headerBurger {
+    display: flex;
+    padding: 37px 25px;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(32.5px);
+  }
+
+  > .linksBurger {
+    display: flex;
+    padding-bottom: 339px;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+  }
+}
+
+.aboutMe {
+  display: flex;
+  height: 32px;
+  padding-bottom: 4px;
+  justify-content: center;
+  align-items: center;
+  >a {
+    color: var(--style-2-Style-2-blue-blue, #5988ff);
+    font-family: Montserrat;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
+.skills {
+  display: flex;
+  height: 32px;
+  padding-bottom: 4px;
+  justify-content: flex-end;
+  align-items: center;
+  >a {
+    color: var(--style-2-Style-2-blue-blue, #5988ff);
+    font-family: Montserrat;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
+.myWork {
+  display: flex;
+  height: 32px;
+  padding-bottom: 4px;
+  justify-content: center;
+  align-items: center;
+  >a {
+    color: var(--style-2-Style-2-blue-blue, #5988ff);
+    font-family: Montserrat;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
+.contact {
+  display: flex;
+  height: 32px;
+  padding: 0px 3px 4px 0px;
+  justify-content: center;
+  align-items: center;
+  >a {
+    color: var(--style-2-Style-2-blue-blue, #5988ff);
+    font-family: Montserrat;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
+
 @media (max-width: 1360px) {
   .nameGreeting,
   .jobTitel {
@@ -207,7 +299,6 @@
 }
 
 @media (max-width: 460px) {
-
   .picturePerson {
     height: 400px;
     top: 628px;
