@@ -3,14 +3,15 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { ContactComponent } from './contact.component';
 
+
 @NgModule({
     declarations: [
+        // Remove the declaration of ContactComponent from here
     ],
     imports: [
         CommonModule,
         FormsModule,
-        ContactComponent,
-        NgModule
+        ContactComponent // Add the import of ContactComponent here
     ],
     exports: [
         ContactComponent
