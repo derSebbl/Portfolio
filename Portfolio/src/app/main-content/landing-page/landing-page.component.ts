@@ -13,12 +13,9 @@ export class LandingPageComponent {
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   onBurgerClicked() {
-    console.log('Burger menu toggled');
     const burgerMenu = this.el.nativeElement.querySelector('#burgerMenu');
-
     if (burgerMenu) {
       const display = window.getComputedStyle(burgerMenu).display;
-
       if (display === 'none') {
         this.renderer.setStyle(burgerMenu, 'display', 'flex');
       }
