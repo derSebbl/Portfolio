@@ -86,7 +86,7 @@ $thirdMove: 55px;
 
 @media (max-width: 1360px) {
   .circleAboutMe {
-    right: 27%;
+    right: 20%;
     left: auto;
   }
 
@@ -121,5 +121,16 @@ $thirdMove: 55px;
   .myWorkRightBig {
     width: 269.166px;
     height: 269.166px;
+  }
+
+  @media (max-width: 1030px) {
+    .myWorkSmall {
+      top: 2335px;
+    }
+
+    .myWorkRightBig {
+      top: 3147px;
+      right: 5px;
+    }
   }
 }
