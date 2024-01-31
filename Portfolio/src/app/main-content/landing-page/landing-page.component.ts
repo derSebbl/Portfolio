@@ -1,4 +1,4 @@
-import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { Component, ElementRef, Renderer2, HostListener } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
@@ -35,6 +35,14 @@ closeBurgerMenu() {
 
   if (burgerMenu) {
     this.renderer.setStyle(burgerMenu, 'display', 'none');
+  } 
+}
+
+@HostListener('window:resize', ['$event'])
+onResize(event: { target: { innerWidth: number; }; }) {
+  if (event.target.innerWidth > 1124) {
+    this.closeBurgerMenu();
   }
 }
+
 }
