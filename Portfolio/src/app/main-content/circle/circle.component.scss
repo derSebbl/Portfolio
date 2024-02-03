@@ -123,14 +123,163 @@ $thirdMove: 55px;
     height: 269.166px;
   }
 
-  @media (max-width: 1030px) {
-    .myWorkSmall {
-      top: 2335px;
+  @media (max-width: 1330px) {
+    .contactSmall {
+      display: none;
     }
+  }
+
+  @media (max-width: 1044px) {
+    .myWorkSmall {
+      top: 2400px;
+    }
+
+    .myWorkBehindProject {
+      right: auto;
+    }
+
+    .myWorkFrontProject {
+      top: 4900px;
+    }
+  }
+
+  @media (max-width: 1030px) {
 
     .myWorkRightBig {
       top: 3147px;
       right: 5px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .myWorkSmall {
+      top: 2550px;
+    }
+
+    .myWorkBig {
+      top: 2555px;
+    }
+  }
+
+  @media (max-width: 905px) {
+    .myWorkBehindProject {
+      right: 80%;
+    }
+
+    .myWorkFrontProject {
+      top: 4950px;
+    }
+
+    .myWorkBig {
+      width: 120px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .myWorkSmall {
+      top: 2400px;
+    }
+
+    .myWorkBig {
+      top: 2350px;
+    }
+
+    .myWorkRightBig {
+      top: 2947px;
+    }
+
+    .myWorkLeftHalf {
+      top: 2662px;
+    }
+
+    .myWorkBehindProject {
+      top: 4620px;
+    }
+
+    .myWorkFrontProject {
+      right: auto;
+      top: 5650px;
+    }
+  }
+
+  @media (max-width: 655px) {
+
+    .myWorkLeftHalf {
+      display: none;
+    }
+
+    .myWorkRightBig {
+      top: 2647px;
+    }
+
+    .myWorkFrontProject {
+      top: 4850px;
+    }
+
+    .myWorkBehindProject {
+      top: 4020px;
+      right: 5%;
+    }
+  }
+
+  @media (max-width: 591px) {
+    .myWorkSmall {
+      top: 2600px;
+    }
+
+    .myWorkFrontProject {
+      top: 5100px;
+    }
+
+    .myWorkBehindProject {
+      top: 4220px;
+    }
+
+    .myWorkRightBig {
+      top: 2847px;
+    }
+
+    .myWorkBig {
+      display: none;
+    }
+  }
+
+  @media (max-width: 469px) {
+    .myWorkFrontProject {
+      top: 5300px;
+    }
+
+    .myWorkBehindProject {
+      top: 4420px;
+      right: 0;
+    }
+
+    .myWorkExtraSmall {
+      top: 3885px;
+    }
+
+    .myWorkRightBig {
+      top: 3047px;
+    }
+
+    .myWorkSmall {
+      top: 2830px;
+    }
+  }
+
+  @media (max-width: 392px) {
+    .myWorkRightBig {
+      top: 3147px;
+    }
+  }
+
+  @media (max-width: 384px) {
+    .myWorkSmall {
+      top: 2880px;
+    }
+
+    .myWorkFrontProject {
+      top: 5350px;
     }
   }
 }
