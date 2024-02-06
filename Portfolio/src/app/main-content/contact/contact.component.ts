@@ -3,11 +3,12 @@ import { FormsModule, NgModel } from '@angular/forms';
 import { CommonModule } from '@angular/common'; 
 import { HostListener } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule], 
+  imports: [FormsModule, CommonModule, RouterModule], 
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

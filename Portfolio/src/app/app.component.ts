@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { LandingPageComponent } from './main-content/landing-page/landing-page.component';
 import { NavbarComponent } from './main-content/landing-page/navbar/navbar.component';
 import { AboutMeComponent } from './main-content/about-me/about-me.component';
@@ -16,7 +17,7 @@ import { CircleComponent } from './main-content/circle/circle.component';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, LandingPageComponent, NavbarComponent, AboutMeComponent,
-            SkillsComponent, WorkLeftComponent, WorkRightComponent, ContactComponent, FooterComponent, MyWorkComponent, CircleComponent],
+            SkillsComponent, WorkLeftComponent, WorkRightComponent, ContactComponent, FooterComponent, MyWorkComponent, CircleComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
