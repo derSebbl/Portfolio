@@ -18,4 +18,12 @@ openLinkedIn() {
   window.open('https://www.linkedin.com/in/sebastian-binz-00a2502a8/', '_blank');
 }
 
+scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
+
 }
