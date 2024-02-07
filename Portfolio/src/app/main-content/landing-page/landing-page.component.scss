@@ -144,16 +144,17 @@
   z-index: 10;
   > a {
     transition: transform 0.3s ease;
-    cursor: default;
+    cursor: pointer;
     &:hover {
       transform: translateX(-10px);
-      cursor: default;
+      cursor: pointer;
     }
   }
   > img {
     transition: transform 0.3s ease;
     &:hover {
       transform: translateX(-10px);
+      cursor: pointer;
     }
   }
 }

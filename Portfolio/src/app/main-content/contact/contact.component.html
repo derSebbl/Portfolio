@@ -28,7 +28,7 @@
     </div>
     <div class="textInput">
       <div class="placeholderTextMsg">Your message</div>
-      <textarea required minlength="10" id="textField" type="text" name="message" [(ngModel)]="contactData.message" #textField="ngModel"></textarea>
+      <textarea required minlength="1" id="textField" type="text" name="message" [(ngModel)]="contactData.message" #textField="ngModel"></textarea>
       <img class="acceptImg" *ngIf="textField.valid && textField.touched" src="assets/img/accepted.svg">
       <img class="errorImg" *ngIf="textField.invalid && textField.touched" src="assets/img/error.svg">
       <div class="errorTxt" *ngIf="textField.invalid && textField.touched">Your message is empty</div>

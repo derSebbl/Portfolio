@@ -11,10 +11,14 @@
     box-sizing: border-box;
 }
 
+.arrowContainer {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .arrow {
-    position: absolute;
-    top: 80px;
-    right: 15%;
     box-sizing: border-box;
     display: flex;
     width: 39px;

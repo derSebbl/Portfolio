@@ -79,7 +79,7 @@ mailTest = false;
   };
 
   post = {
-    endPoint: 'http://sebastianbinz.com/sendMail.php',
+    endPoint: 'https://sebastianbinz.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

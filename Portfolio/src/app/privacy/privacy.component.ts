@@ -9,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class PrivacyComponent {
 
+  back(){
+    window.history.back();
+  }
 }
