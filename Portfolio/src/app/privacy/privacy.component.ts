@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common'; 
 
 @Component({
   selector: 'app-privacy',
@@ -9,7 +10,9 @@ import { Component } from '@angular/core';
 })
 export class PrivacyComponent {
 
+  constructor(private location: Location) { }
+
   back(){
-    window.history.back();
+    this.location.back();
   }
 }
