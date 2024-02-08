@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
 })
 
 export class ContactComponent {
-  emailPattern = '^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{1,}$';
+  emailPattern = '^[a-z0-9._%+]+@[a-z0-9.]+\\.[a-z]{2,4}$';
 
   isHovering = false;
 
