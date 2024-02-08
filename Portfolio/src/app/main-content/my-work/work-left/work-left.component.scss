@@ -94,49 +94,53 @@
 }
 
 #gitBtn {
-    display: flex;
-    padding: 15px 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    border: 2px solid var(--style-2-Style-2-blue-blue, #5988ff);
-    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
-    color: var(--style-2-Style-2-blue-blue, #5988ff);
-    background-color: #fff;
-    font-family: Poppins;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    &:hover {
-      cursor: pointer;
-      animation: changeBackground 80ms ease-in-out;
-      animation-fill-mode: forwards;
-    }
-  }
-
-#liveTestBtn {
-  display: none;
-  padding: 13px 24px;
+  display: flex;
+  padding: 15px 30px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 10px;
-  background: var(--style-2-Style-2-blue-blue, #5988ff);
+  border: 2px solid var(--style-2-Style-2-blue-blue, #5988ff);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  color: var(--style-2-Style-2-blue-blue, #5988ff);
+  background-color: #fff;
+  font-family: Poppins;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  &:hover {
+    cursor: pointer;
+    animation: changeBackground 80ms ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+#liveTestBtn {
+  display: flex;
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--style-2-Style-2-blue-blue, #5988FF);
   color: var(--White, #fff);
   font-family: Poppins;
   font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+  &:hover {
+    cursor: pointer;
+    animation: changeBackground 80ms ease-in-out;
+    animation-fill-mode: forwards;
+  }
 }
-
 
 .btnContainer {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: space-between;
+  width: 95%;
 }
 
 @media (max-width: 1455px) {
