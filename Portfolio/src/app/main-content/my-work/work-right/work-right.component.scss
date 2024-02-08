@@ -198,11 +198,13 @@
     .btnContainer {
       justify-content: space-between;
       z-index: 10;
+      width: 100%;
     }
   
     #liveTestBtn {
+      border: none;
       display: flex;
-      padding: 13px 24px;
+      padding: 12px 22px;
       height: 54px;
       box-sizing: border-box;
       &:hover {
@@ -213,7 +215,7 @@
     }
   
     #gitBtn {
-      padding: 13px 24px;
+      padding: 12px 22px;
       height: 54px;
       box-sizing: border-box;
       &:hover {

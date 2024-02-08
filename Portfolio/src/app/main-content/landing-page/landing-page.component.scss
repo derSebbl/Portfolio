@@ -295,6 +295,7 @@
 
   .picturePerson {
     height: 547px;
+    width: 100%;
     top: 480px;
     left: revert;
     overflow: hidden;
@@ -323,6 +324,8 @@
   .picturePerson {
     height: 620px;
     top: 408px;
+    display: grid;
+    justify-content: center;
   }
 
   .nameGreeting {
