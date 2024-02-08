@@ -321,8 +321,12 @@
 
 @media (max-width: 460px) {
   .picturePerson {
-    height: 400px;
-    top: 628px;
+    height: 620px;
+    top: 408px;
+  }
+
+  .nameGreeting {
+    padding-top: 100px;
   }
 
   .jobTitel > .developer {
