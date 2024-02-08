@@ -121,7 +121,9 @@
   align-items: center;
   gap: 10px;
   border-radius: 10px;
+  border: 2px solid var(--style-2-Style-2-blue-blue, #5988ff);
   background: var(--style-2-Style-2-blue-blue, #5988FF);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
   color: var(--White, #fff);
   font-family: Poppins;
   font-size: 23px;
