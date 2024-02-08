@@ -34,12 +34,10 @@
   background-size: 100% 100%;
   z-index: 9;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
-  transition: background-size 0.2s ease, transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transform: scale(1) translateY(0);
   &:hover {
-    width: 640px;
-    height: 413px;
-    transition: width 0.2s, height 0.2s;
-    transform: translateY(-26px);
+    transform: scale(1.1) translateY(-30px);
   }
 }
 
