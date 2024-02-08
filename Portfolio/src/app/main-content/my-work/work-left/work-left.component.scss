@@ -170,12 +170,6 @@
   .img {
     width: 340px;
     height: 215px;
-    &:hover {
-      width: 360px;
-      height: 235px;
-      transition: width 0.2s, height 0.2s; 
-          transform: translateY(-26px);
-    }
   }
 
   .mainContainer {
