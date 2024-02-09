@@ -24,4 +24,15 @@ import { CircleComponent } from './main-content/circle/circle.component';
 export class AppComponent {
   title = 'Portfolio';
 
+  changeLanguageToEnglish() {
+    console.log('changeLanguageToEnglish');
+    const gerElement = document.querySelector('.ger') as HTMLElement;
+    if (gerElement) {
+      gerElement.style.display = 'none';
+    }
+    const enElement = document.querySelector('.en') as HTMLElement;
+    if (enElement) {
+      enElement.style.display = 'block';
+    }
+  }
 }

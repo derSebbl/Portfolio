@@ -15,6 +15,16 @@ span:hover {
   cursor: default;
 }
 
+.en {
+  display: none;
+}
+
+.ger {
+  display: block;
+}
+
+
+// Scrollbar //
   * {
     scrollbar-width: auto;
     scrollbar-color: #5988ff #ffffff;
