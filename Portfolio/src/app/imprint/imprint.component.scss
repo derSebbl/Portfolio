@@ -1,14 +1,17 @@
 .mainContainer {
-    background: linear-gradient(180deg, #fff 12.89%, #eaf0ff 91.39%);
-    display: flex;
-    max-width: 1920px;
-    width: 100%;
-    flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    box-sizing: border-box;
+  background: linear-gradient(270deg, #fff 10.00%, #5988ff 90.00%);
+  background-size: 100% 140px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
 .arrowContainer {
@@ -33,6 +36,13 @@
     background-position: center;
     background-repeat: no-repeat;
     rotate: 270deg;
+    }
+
+
+    .logo {
+      width: 64px;
+      height: 69px;
+      padding-bottom: 20px;
     }
   
   .arrow:hover {

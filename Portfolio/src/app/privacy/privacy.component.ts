@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common'; 
+import { NavbarComponent } from '../main-content/landing-page/navbar/navbar.component'; 
 
 @Component({
   selector: 'app-privacy',
   standalone: true,
-  imports: [],
+  imports: [NavbarComponent],
   templateUrl: './privacy.component.html',
   styleUrl: './privacy.component.scss'
 })
