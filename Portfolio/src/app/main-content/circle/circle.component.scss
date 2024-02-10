@@ -5,27 +5,27 @@
   width: 100%;
 }
 
-#circleFrontPageEN {
+#circleFrontPageEN, #circleFrontPageGER {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-#circleAboutMeEN {
+#circleAboutMeEN, #circleAboutMeGER {
   position: absolute;
   top: 926px;
   left: 700px;
   z-index: 9;
 }
 
-#circleAboutMeSmallEN {
+#circleAboutMeSmallEN, #circleAboutMeSmallGER {
   position: absolute;
   top: 1086px;
   right: 15%;
   z-index: 9;
 }
 
-#myWorkBigEN {
+#myWorkBigEN, #myWorkBigGER {
   position: absolute;
   top: 2485px;
   right: 12%;
@@ -37,31 +37,37 @@
   right: 55%;
 }
 
-#myWorkLeftHalfEN {
+#myWorkSmallGER {
+  position: absolute;
+  top: 2355px;
+  right: 55%;
+}
+
+#myWorkLeftHalfEN, #myWorkLeftHalfGER {
   position: absolute;
   top: 2862px;
   left: 0;
 }
 
-#myWorkRightBigEN {
+#myWorkRightBigEN, #myWorkRightBigGER {
   position: absolute;
   top: 3147px;
   right: 0px;
 }
 
-#myWorkExtraSmallEN {
+#myWorkExtraSmallEN, #myWorkExtraSmallGER {
   position: absolute;
   top: 3685px;
   right: 92%;
 }
 
-#myWorkBehindProjectEN {
+#myWorkBehindProjectEN, #myWorkBehindProjectGER {
   position: absolute;
   top: 4120px;
   right: 72%;
 }
 
-#myWorkFrontProjectEN {
+#myWorkFrontProjectEN, #myWorkFrontProjectGER {
   position: absolute;
   top: 4700px;
   right: 100px;
@@ -74,55 +80,58 @@
   right: 1182px;
 }
 
-#contactSmallEN {
+#contactSmallEN, #contactSmallGER {
   position: absolute;
   top: 5700px;
   right: 200px;
   z-index: 1;
 }
 
+@media (max-width: 1390px){
+  #myWorkSmallGER {
+    top: 2315px;
+  }
+}
+
 @media (max-width: 1360px) {
-  #circleAboutMeEN {
+  #circleAboutMeEN, #circleAboutMeGER {
     right: 20%;
     left: auto;
   }
 
-  #circleAboutMeSmallEN {
+  #circleAboutMeSmallEN, #circleAboutMeSmallGER {
     right: 5%;
   }
 }
 
-@media (max-width: 700px) {
-  #circleFrontPageEN {
-    overflow: hidden;
-    position: absolute;
-    left: auto;
-    right: 5px;
-  }
-}
-
 @media (max-width: 1330px) {
-  #contactBigEN {
+  #contactBigEN, #contactBigGER {
     display: none;
   }
 
-  #contactSmallEN {
+  #contactSmallEN, #contactSmallGER {
     top: 6616px;
   }
 
-  #myWorkSmallEN {
+  #myWorkSmallEN, #myWorkSmallGER {
     width: 45px;
     height: 45px;
   }
 
-  #myWorkRightBigEN {
+  #myWorkRightBigEN, #myWorkRightBigGER {
     width: 269.166px;
     height: 269.166px;
   }
 
   @media (max-width: 1330px) {
-    #contactSmallEN {
+    #contactSmallEN, #contactSmallGER {
       display: none;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    #myWorkSmallGER {
+      top: 2385px;
     }
   }
 
@@ -131,18 +140,26 @@
       top: 2400px;
     }
 
-    #myWorkBehindProjectEN {
+    #myWorkSmallGER {
+      top: 2500px;
+    }
+
+    #myWorkBehindProjectEN, #myWorkBehindProjectGER {
       right: auto;
     }
 
-    #myWorkFrontProjectEN {
+    #myWorkFrontProjectEN, #myWorkFrontProjectGER {
       top: 4900px;
+    }
+
+    #myWorkBigGER {
+      display: none;
     }
   }
 
   @media (max-width: 1030px) {
 
-    #myWorkRightBigEN {
+    #myWorkRightBigEN, #myWorkRightBigGER {
       top: 3147px;
       right: 5px;
     }
@@ -153,22 +170,40 @@
       top: 2550px;
     }
 
-    #myWorkBigEN {
+    #myWorkSmallGER {
+      top: 2750px;
+    }
+
+    #myWorkBigEN, #myWorkBigGER {
       top: 2555px;
+    }
+
+    #myWorkLeftHalfGER {
+      top: 3262px;
+    }
+
+    #myWorkFrontProjectGER {
+      top: 5200px;
     }
   }
 
   @media (max-width: 905px) {
-    #myWorkBehindProjectEN {
+    #myWorkBehindProjectEN, #myWorkBehindProjectGER {
       right: 80%;
     }
 
-    #myWorkFrontProjectEN {
+    #myWorkFrontProjectEN, #myWorkFrontProjectGER {
       top: 4950px;
     }
 
-    #myWorkBigEN {
+    #myWorkBigEN, #myWorkBigGER {
       width: 120px;
+    }
+  }
+
+  @media (max-width: 855px) {
+    #myWorkLeftHalfGER {
+      display: none;
     }
   }
 
@@ -177,19 +212,23 @@
       top: 2400px;
     }
 
-    #myWorkBigEN {
+    #myWorkSmallGER {
+      top: 2500px;
+    }
+
+    #myWorkBigEN, #myWorkBigGER {
       top: 2350px;
     }
 
-    #myWorkRightBigEN {
+    #myWorkRightBigEN, #myWorkRightBigGER {
       top: 2947px;
     }
 
-    #myWorkLeftHalfEN {
+    #myWorkLeftHalfEN, #myWorkLeftHalfGER {
       top: 2662px;
     }
 
-    #myWorkBehindProjectEN {
+    #myWorkBehindProjectEN, #myWorkBehindProjectGER {
       top: 4620px;
     }
 
@@ -197,11 +236,24 @@
       right: auto;
       top: 5650px;
     }
+
+    #myWorkFrontProjectGER {
+      right: auto;
+      top: 5850px;
+    }
+
+
+    #circleFrontPageEN, #circleFrontPageGER {
+      overflow: hidden;
+      position: absolute;
+      left: auto;
+      right: 5px;
+    }
   }
 
   @media (max-width: 655px) {
 
-    #myWorkLeftHalfEN {
+    #myWorkLeftHalfEN, #myWorkLeftHalfGER {
       display: none;
     }
 
@@ -209,11 +261,15 @@
       top: 2647px;
     }
 
-    #myWorkFrontProjectEN {
+    #myWorkRightBigGER {
+      top: 2847px;
+    }
+
+    #myWorkFrontProjectEN, #myWorkFrontProjectGER {
       top: 4850px;
     }
 
-    #myWorkBehindProjectEN {
+    #myWorkBehindProjectEN, #myWorkBehindProjectGER {
       top: 4020px;
       right: 5%;
     }
@@ -224,25 +280,37 @@
       top: 2600px;
     }
 
-    #myWorkFrontProjectEN {
+    #myWorkSmallGER {
+      top: 2750px;
+    }
+
+    #myWorkFrontProjectEN, #myWorkFrontProjectGER {
       top: 5100px;
     }
 
-    #myWorkBehindProjectEN {
+    #myWorkBehindProjectEN, #myWorkBehindProjectGER {
       top: 4220px;
+    }
+
+    #myWorkBehindProjectGER {
+      top: 4420px;
     }
 
     #myWorkRightBigEN {
       top: 2847px;
     }
 
-    #myWorkBigEN {
+    #myWorkRightBigGER {
+      top: 3047px;
+    }
+
+    #myWorkBigEN, #myWorkBigGER {
       display: none;
     }
   }
 
   @media (max-width: 469px) {
-    #myWorkFrontProjectEN {
+    #myWorkFrontProjectEN, #myWorkFrontProjectGER {
       top: 5300px;
     }
 
@@ -251,22 +319,64 @@
       right: 0;
     }
 
+    #myWorkBehindProjectGER {
+      top: 4650px;
+    }
+
     #myWorkExtraSmallEN {
       top: 3885px;
+    }
+
+    #myWorkExtraSmallGER {
+      top: 4285px;
     }
 
     #myWorkRightBigEN {
       top: 3047px;
     }
 
+    #myWorkRightBigGER {
+      top: 3347px;
+    }
+
     #myWorkSmallEN {
       top: 2830px;
+    }
+
+    #myWorkSmallGER {
+      top: 2990px;
     }
   }
 
   @media (max-width: 392px) {
     #myWorkRightBigEN {
       top: 3147px;
+    }
+
+    #myWorkRightBigGER {
+      top: 3397px;
+    }
+
+    #myWorkSmallGER {
+      top: 3150px;
+    }
+
+    #myWorkBehindProjectGER {
+      top: 4850px;
+    }
+
+    #myWorkFrontProjectGER {
+      top: 5650px;
+    }
+  }
+
+  @media (max-width: 390px) {
+    #myWorkSmallGER {
+      top: 3050px;
+    }
+
+    #myWorkBehindProjectGER {
+      top: 4750px;
     }
   }
 
@@ -275,8 +385,16 @@
       top: 2880px;
     }
 
+    #myWorkSmallGER {
+      top: 3080px;
+    }
+
     #myWorkFrontProjectEN {
       top: 5350px;
+    }
+
+    #myWorkFrontProjectGER {
+      top: 5590px;
     }
   }
 }
