@@ -1,7 +1,13 @@
 <div class="mainContainer">
     <div id="work" class="myWork">
-        <div class="header">My work</div>
-        <div class="description">This page is a sample of my work - please feel free to try them out.</div>
+        <div class="header">
+            <div class="en">My work</div>
+            <div class="ger">Meine Projekte</div>
+        </div>
+        <div class="description">
+            <div class="en">This page is a sample of my work - please feel free to try them out.</div>
+            <div class="ger">Diese Seite ist eine Auswahl meiner Projekte - probieren Sie sie gerne aus.</div>
+        </div>
     </div>
     <app-work-left 
         [header]="'Join'" 
@@ -9,6 +15,7 @@
         [linkGit]="'https://github.com/derSebbl/join'" 
         [skills]="'Angular | TypeScript | HTML | CSS | Firebase '" 
         [description]="'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'" 
+        [descriptionGer]="'Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.'"
         [image]="'assets/img/join.png'">
     </app-work-left>
     <app-work-right 
@@ -16,7 +23,8 @@
         [linkLive]="'http://sebastianbinz.com/Sharkie/index.html'" 
         [linkGit]="'https://github.com/derSebbl/sharkie'" 
         [skills]="'JavaScript | HTML | CSS '" 
-        [description]="'Swim, shoot and slap game based on object-oriented approach. Help Sharkie to find coins and poison bubbles to fight against a big Boss.'" 
+        [description]="'Swim, shoot and slap game based on object-oriented approach. Help Sharkie to find coins and poison bubbles to fight against a big Boss.'"
+        [descriptionGer]="'Schwimmen, schießen und schlagen. Spiel basierend auf objektorientiertem Ansatz. Helfen Sie Sharkie, Münzen und Giftblasen zu finden, um gegen einen großen Boss zu kämpfen.'" 
         [image]="'assets/img/Sharkie.png'">
     </app-work-right>
     <app-work-left 
@@ -24,7 +32,8 @@
         [linkLive]="'http://sebastianbinz.com/Pokedex/index.html'" 
         [linkGit]="'https://github.com/derSebbl/Pokedex'" 
         [skills]="'JavaScript | HTML | CSS | Api '" 
-        [description]="'Based on the PokéAPI a simple library that provides and catalogues pokemon information.'" 
+        [description]="'Based on the PokéAPI a simple library that provides and catalogues pokemon information.'"
+        [descriptionGer]="'Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.'" 
         [image]="'assets/img/poke.png'">
     </app-work-left>
     <app-work-right 
@@ -32,7 +41,8 @@
         [linkLive]="'http://sebastianbinz.com'" 
         [linkGit]="'https://github.com/derSebbl'" 
         [skills]="'Angular | Firebase '" 
-        [description]="'A very Simple Customer Relationship Management system working with CRUD functionality.'" 
+        [description]="'A very Simple Customer Relationship Management system working with CRUD functionality.'"
+        [descriptionGer]="'Ein sehr einfaches Customer Relationship Management-System, das mit CRUD-Funktionalität arbeitet.'" 
         [image]="'assets/img/crm.png'">
     </app-work-right>
 </div>

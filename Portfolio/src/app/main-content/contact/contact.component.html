@@ -1,37 +1,66 @@
 <div id="contact" class="mainContainer">
   <div class="content">
-    <div class="contact">Contact</div>
+    <div class="contact">
+      <div class="en">Contact</div>
+      <div class="ger">Kontakt</div>
+    </div>
     <div>
-    <div class="problemHeader">Got a problem to solve?</div>
+    <div class="problemHeader">
+      <div class="en">Got a problem to solve?</div>
+      <div class="ger">Ein Problem zu lösen?</div>
+    </div>
     <div class="description">
-      Contact me through this form, I am interested in hearing you, knowing your
-      ideas and contributing to your projects with my work.
+      <div class="en">Contact me through this form, I am interested in hearing you, knowing your
+          ideas and contributing to your projects with my work.
+      </div>
+      <div class="ger">Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert 
+        von Ihnen und Ihren Ideen zu hören und Ihren Projekten mit meiner Arbeit zu helfen.
+      </div>
     </div>
     <div class="needContact">
-      Need a Frontend developer? <span>Contact me!</span>
+      <div class="en">Need a Frontend developer? <span style="font-weight: bold;">Contact me!</span></div>
+      <div class="ger">Brauchen Sie einen Frontend-Entwickler? <span style="font-weight: bold;">Kontaktieren Sie mich!</span></div>
     </div>
   </div> 
   <form class="inputContainer" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
     <div class="nameInput">
-      <div class="placeholderText"> Your name </div>
+      <div class="placeholderText">
+        <div class="en">Your name </div>
+        <div class="ger">Ihr Name</div>
+      </div>
       <input required minlength="3" id="nameField" type="text" name="name" [(ngModel)]="contactData.name" #nameField="ngModel">
       <img class="acceptImg" *ngIf="nameField.valid && nameField.touched" src="assets/img/accepted.svg">
       <img class="errorImg" *ngIf="nameField.invalid && nameField.touched" src="assets/img/error.svg">
-      <div class="errorTxt" *ngIf="nameField.invalid && nameField.touched">Your name is required </div>
+      <div class="errorTxt" *ngIf="nameField.invalid && nameField.touched">
+        <div class="en">Your name is required</div>
+        <div class="ger">Ihr Name wird benötigt</div>
+      </div>
     </div>
     <div class="mailInput">
-      <div class="placeholderText">Your email</div>
+      <div class="placeholderText">
+        <div class="en">Your email</div>
+        <div class="ger">Ihre Email</div>
+      </div>
       <input required id="emailField" type="email" name="email" [(ngModel)]="contactData.email" #mailField="ngModel" [pattern]="emailPattern">
       <img class="acceptImg" *ngIf="mailField.valid && mailField.touched" src="assets/img/accepted.svg">
       <img class="errorImg" *ngIf="mailField.invalid && mailField.touched" src="assets/img/error.svg">
-      <div class="errorTxt" *ngIf="mailField.invalid && mailField.touched">Your email is required</div>
+      <div class="errorTxt" *ngIf="mailField.invalid && mailField.touched">
+        <div class="en">Your email is required</div>
+        <div class="ger">Ihre Email wird benötigt</div>
+      </div>
     </div>
     <div class="textInput">
-      <div class="placeholderTextMsg">Your message</div>
+      <div class="placeholderTextMsg">
+        <div class="en">Your message</div>
+        <div class="ger">Ihre Nachricht</div>
+      </div>
       <textarea required minlength="1" id="textField" type="text" name="message" [(ngModel)]="contactData.message" #textField="ngModel"></textarea>
       <img class="acceptImg" *ngIf="textField.valid && textField.touched" src="assets/img/accepted.svg">
       <img class="errorImg" *ngIf="textField.invalid && textField.touched" src="assets/img/error.svg">
-      <div class="errorTxt" *ngIf="textField.invalid && textField.touched">Your message is empty</div>
+      <div class="errorTxt" *ngIf="textField.invalid && textField.touched">
+        <div class="en">Your message is empty</div>
+        <div class="ger">Ihre Nachricht ist leer</div>
+      </div>
     </div>
     <div class="btnContainer">
       <div class="ceckboxContainer">
@@ -44,14 +73,22 @@
             </label>
           </div>
           <div class="checkboxText">
-            <span>
+            <div class="en">
               I've read the 
               <a routerLink="/privacy" (click)="scrollToTop()" [class.hover-effect]="isHovering" class="privacy">privacy policy</a>
               and agree to the processing of my data as outlined.
-            </span>
+            </div>
+            <div class="ger">
+              Ich habe die 
+              <a routerLink="/privacy" (click)="scrollToTop()" [class.hover-effect]="isHovering" style="width: 170px;" class="privacy">Datenschutzerklärung</a>
+              gelesen und stimme der Verarbeitung meiner Daten zu.
+          </div>
           </div>
         </div>
-        <div class="errorTxt" *ngIf="privacyField.invalid && privacyField.touched">Please accept the privacy policy.</div>
+        <div class="errorTxt" *ngIf="privacyField.invalid && privacyField.touched">
+          <div class="en">Please accept the privacy policy.</div>
+          <div class="ger">Bitte akzeptieren Sie die Datenschutzerklärung.</div>
+        </div>
       </div>
       <div style="height: 62px;">
         <button id="btnSend" [disabled]="!contactForm.valid" type="submit">Say hello :) </button>

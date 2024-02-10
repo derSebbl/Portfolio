@@ -4,10 +4,19 @@
   </div>
   <app-navbar (burgerClicked)="onBurgerClicked()" class="navBar"></app-navbar>
   <div class="nameAndJob">
-    <div class="nameGreeting">Hello!<br>I am Sebastian</div>
+    <div class="nameGreeting">
+      <div class="en">Hello!<br>I am Sebastian</div>
+      <div class="ger">Hallo!<br>Ich bin Sebastian</div>
+    </div>
     <div class="jobTitel">
-      <span class="frontend">FRONTEND</span>
-      <span class="developer">DEVELOPER</span>
+      <div class="frontend">
+        <p class="en">FRONTEND</p>
+        <p style="padding-right: 80px; margin: 0;" class="ger">FRONTEND</p>
+      </div>
+      <div class="developer">
+        <p class="en">DEVELOPER</p>
+        <p style="padding-right: 26px; margin: 0;" class="ger">ENTWICKLER</p>
+      </div>
     </div>
   </div>
   <div class="scrollContainer">
