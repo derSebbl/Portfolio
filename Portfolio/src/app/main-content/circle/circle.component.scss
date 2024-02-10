@@ -5,82 +5,76 @@
   width: 100%;
 }
 
-.flag {
-  position: absolute;
-  top: 0;
-  right: 20%;
-}
-
-.circleFrontPage {
+#circleFrontPageEN {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.circleAboutMe {
+#circleAboutMeEN {
   position: absolute;
   top: 926px;
   left: 700px;
   z-index: 9;
 }
 
-.circleAboutMeSmall {
+#circleAboutMeSmallEN {
   position: absolute;
   top: 1086px;
   right: 15%;
   z-index: 9;
 }
 
-.myWorkBig {
+#myWorkBigEN {
   position: absolute;
   top: 2485px;
   right: 12%;
 }
 
-.myWorkSmall {
+#myWorkSmallEN {
   position: absolute;
   top: 2335px;
   right: 55%;
 }
 
-.myWorkLeftHalf {
+#myWorkLeftHalfEN {
   position: absolute;
   top: 2862px;
   left: 0;
 }
 
-.myWorkRightBig {
+#myWorkRightBigEN {
   position: absolute;
   top: 3147px;
   right: 0px;
 }
 
-.myWorkExtraSmall {
+#myWorkExtraSmallEN {
   position: absolute;
   top: 3685px;
   right: 92%;
 }
 
-.myWorkBehindProject {
+#myWorkBehindProjectEN {
   position: absolute;
   top: 4120px;
   right: 72%;
 }
 
-.myWorkFrontProject {
+#myWorkFrontProjectEN {
   position: absolute;
   top: 4700px;
   right: 100px;
   z-index: 9;
 }
 
-.contactBig {
+#contactBigEN {
   position: absolute;
   top: 5337px;
   right: 1182px;
 }
 
-.contactSmall {
+#contactSmallEN {
   position: absolute;
   top: 5700px;
   right: 200px;
@@ -88,18 +82,18 @@
 }
 
 @media (max-width: 1360px) {
-  .circleAboutMe {
+  #circleAboutMeEN {
     right: 20%;
     left: auto;
   }
 
-  .circleAboutMeSmall {
+  #circleAboutMeSmallEN {
     right: 5%;
   }
 }
 
 @media (max-width: 700px) {
-  .circleFrontPage {
+  #circleFrontPageEN {
     overflow: hidden;
     position: absolute;
     left: auto;
@@ -108,98 +102,98 @@
 }
 
 @media (max-width: 1330px) {
-  .contactBig {
+  #contactBigEN {
     display: none;
   }
 
-  .contactSmall {
+  #contactSmallEN {
     top: 6616px;
   }
 
-  .myWorkSmall {
+  #myWorkSmallEN {
     width: 45px;
     height: 45px;
   }
 
-  .myWorkRightBig {
+  #myWorkRightBigEN {
     width: 269.166px;
     height: 269.166px;
   }
 
   @media (max-width: 1330px) {
-    .contactSmall {
+    #contactSmallEN {
       display: none;
     }
   }
 
   @media (max-width: 1044px) {
-    .myWorkSmall {
+    #myWorkSmallEN {
       top: 2400px;
     }
 
-    .myWorkBehindProject {
+    #myWorkBehindProjectEN {
       right: auto;
     }
 
-    .myWorkFrontProject {
+    #myWorkFrontProjectEN {
       top: 4900px;
     }
   }
 
   @media (max-width: 1030px) {
 
-    .myWorkRightBig {
+    #myWorkRightBigEN {
       top: 3147px;
       right: 5px;
     }
   }
 
   @media (max-width: 1000px) {
-    .myWorkSmall {
+    #myWorkSmallEN {
       top: 2550px;
     }
 
-    .myWorkBig {
+    #myWorkBigEN {
       top: 2555px;
     }
   }
 
   @media (max-width: 905px) {
-    .myWorkBehindProject {
+    #myWorkBehindProjectEN {
       right: 80%;
     }
 
-    .myWorkFrontProject {
+    #myWorkFrontProjectEN {
       top: 4950px;
     }
 
-    .myWorkBig {
+    #myWorkBigEN {
       width: 120px;
     }
   }
 
   @media (max-width: 700px) {
-    .myWorkSmall {
+    #myWorkSmallEN {
       top: 2400px;
     }
 
-    .myWorkBig {
+    #myWorkBigEN {
       top: 2350px;
     }
 
-    .myWorkRightBig {
+    #myWorkRightBigEN {
       top: 2947px;
     }
 
-    .myWorkLeftHalf {
+    #myWorkLeftHalfEN {
       top: 2662px;
     }
 
-    .myWorkBehindProject {
+    #myWorkBehindProjectEN {
       top: 4620px;
     }
 
-    .myWorkFrontProject {
+    #myWorkFrontProjectEN {
       right: auto;
       top: 5650px;
     }
@@ -207,81 +201,81 @@
 
   @media (max-width: 655px) {
 
-    .myWorkLeftHalf {
+    #myWorkLeftHalfEN {
       display: none;
     }
 
-    .myWorkRightBig {
+    #myWorkRightBigEN {
       top: 2647px;
     }
 
-    .myWorkFrontProject {
+    #myWorkFrontProjectEN {
       top: 4850px;
     }
 
-    .myWorkBehindProject {
+    #myWorkBehindProjectEN {
       top: 4020px;
       right: 5%;
     }
   }
 
   @media (max-width: 591px) {
-    .myWorkSmall {
+    #myWorkSmallEN {
       top: 2600px;
     }
 
-    .myWorkFrontProject {
+    #myWorkFrontProjectEN {
       top: 5100px;
     }
 
-    .myWorkBehindProject {
+    #myWorkBehindProjectEN {
       top: 4220px;
     }
 
-    .myWorkRightBig {
+    #myWorkRightBigEN {
       top: 2847px;
     }
 
-    .myWorkBig {
+    #myWorkBigEN {
       display: none;
     }
   }
 
   @media (max-width: 469px) {
-    .myWorkFrontProject {
+    #myWorkFrontProjectEN {
       top: 5300px;
     }
 
-    .myWorkBehindProject {
+    #myWorkBehindProjectEN {
       top: 4420px;
       right: 0;
     }
 
-    .myWorkExtraSmall {
+    #myWorkExtraSmallEN {
       top: 3885px;
     }
 
-    .myWorkRightBig {
+    #myWorkRightBigEN {
       top: 3047px;
     }
 
-    .myWorkSmall {
+    #myWorkSmallEN {
       top: 2830px;
     }
   }
 
   @media (max-width: 392px) {
-    .myWorkRightBig {
+    #myWorkRightBigEN {
       top: 3147px;
     }
   }
 
   @media (max-width: 384px) {
-    .myWorkSmall {
+    #myWorkSmallEN {
       top: 2880px;
     }
 
-    .myWorkFrontProject {
+    #myWorkFrontProjectEN {
       top: 5350px;
     }
   }
