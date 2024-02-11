@@ -1,3 +1,12 @@
+.Component {
+  background: radial-gradient(
+    338.54% 243.13% at 28.82% -124.4%,
+    #5988ff 6.25%,
+    #5988ff 51.56%,
+    #0043f0 100%
+  );
+}
+
 .mainContainer {
   display: flex;
   max-width: 1920px;
@@ -8,12 +17,6 @@
   justify-content: center;
   align-items: center;
   gap: 9px;
-  background: radial-gradient(
-    338.54% 243.13% at 28.82% -124.4%,
-    #5988ff 6.25%,
-    #5988ff 51.56%,
-    #0043f0 100%
-  );
 }
 
 .topRow {

@@ -1,3 +1,7 @@
+.Component {
+  background: linear-gradient(180deg, #fff 12.89%, #eaf0ff 91.39%);
+}
+
 .mainContainer {
   position: relative;
   display: flex;
@@ -5,7 +9,6 @@
   max-width: 1920px;
   height: 746px;
   flex-shrink: 0;
-  background: linear-gradient(180deg, #fff 12.89%, #eaf0ff 91.39%);
   padding-top: 234px;
   padding-bottom: 103px;
 }

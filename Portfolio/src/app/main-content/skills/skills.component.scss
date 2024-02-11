@@ -1,15 +1,18 @@
-.mainContainer {
-  display: flex;
-  flex-direction: column;
-  max-width: 1920px;
-  width: 100%;
-  min-height: 632px;
+.Component {
   background: linear-gradient(
     129deg,
     #5988ff -33.96%,
     #5988ff 36.71%,
     #0043f0 112.25%
   );
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  width: 100%;
+  min-height: 632px;
   align-items: center;
 }
 
