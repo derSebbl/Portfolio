@@ -1,8 +1,13 @@
+.Component {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(270deg, #fff 10.00%, #5988ff 90.00%);
+  background-size: 100% 140px;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
 .mainContainer {
-    background: linear-gradient(270deg, #fff 10.00%, #5988ff 90.00%);
-    background-size: 100% 140px; // Sie können die Größe an Ihre Bedürfnisse anpassen
-    background-position: top left;
-    background-repeat: no-repeat;
     display: flex;
     max-width: 1920px;
     width: 100%;
