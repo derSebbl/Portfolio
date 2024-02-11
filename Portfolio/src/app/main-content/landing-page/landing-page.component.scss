@@ -271,6 +271,16 @@
   cursor: pointer;
 }
 
+#developerGer {
+  margin: 0;
+  padding-right: 24px;
+}
+
+#frontendGer {
+  margin: 0;
+  padding-right: 75px;
+}
+
 @media (max-width: 1360px) {
   .nameGreeting,
   .jobTitel {
@@ -299,6 +309,10 @@
     top: 480px;
     left: revert;
     overflow: hidden;
+  }
+
+  #frontEndGer, #developerGer {
+    padding-right: 0;
   }
 }
 
