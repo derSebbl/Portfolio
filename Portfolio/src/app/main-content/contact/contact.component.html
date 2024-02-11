@@ -91,7 +91,10 @@
         </div>
       </div>
       <div style="height: 62px;">
-        <button id="btnSend" [disabled]="!contactForm.valid" type="submit">Say hello :) </button>
+        <button id="btnSend" [disabled]="!contactForm.valid" type="submit">
+          <div class="en">Say hello :)</div>
+          <div class="ger">Sagen Sie hallo :)</div>
+        </button>
       </div>
     </div>
   </form>
@@ -99,7 +102,7 @@
   <div class="arrow" (click)="scrollToTop()"></div>
   <div id="EmailMsg">
     <div class="en">Thank's for your Message :)</div>
-    <div class="ger">Danke für Deine Nachricht :)</div>
+    <div class="ger">Danke für Ihre Nachricht :)</div>
 
   </div>
 </div>
