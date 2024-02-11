@@ -2,9 +2,8 @@
     <div>
         <img src="assets/img/logo header.svg">
     </div>
-    <div>
+    <div style="display: flex;">
         <img class="burgerMenu" (click)="onBurgerClick()" src="assets/img/burger menu.svg">
-    </div>
     <div class="links">
         <div class="aboutMe">
             <a href="#aboutMe">
@@ -25,4 +24,10 @@
             </a>
         </div>
     </div>
+    <div class="flag">
+        <img class="ger" (click)="changeLanguage()" src="assets/img/english.jpeg">
+        <img class="en" (click)="changeLanguage()" src="assets/img/german.png">
+    </div>
+    
+</div>
 </nav>

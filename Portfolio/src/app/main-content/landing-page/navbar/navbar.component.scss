@@ -56,13 +56,28 @@ a {
   display: none;
 }
 
-@media (max-width: 1124px) {
+.flag {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  padding-left: 16px;
+  &:hover {
+    cursor: pointer;
+  }
+> img {
+  width: 40px;
+  height: 20px;
+}
+}
+
+@media (max-width: 1167px) {
 
   .navbar {
-    padding: 25px 34px 25px 34px;
+    padding: 25px 10px 25px 34px;
+
   }
 
-  .navbar > .links {
+  .links {
     display: none;
   }
 

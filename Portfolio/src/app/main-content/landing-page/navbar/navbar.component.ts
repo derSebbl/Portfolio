@@ -13,4 +13,26 @@ export class NavbarComponent {
   onBurgerClick() {
     this.burgerClicked.emit();
   }
+
+
+  changeLanguage() {
+    var enElements = document.querySelectorAll('.en');
+    var gerElements = document.querySelectorAll('.ger');
+
+    enElements.forEach(function(element) {
+      if ((element as HTMLElement).style.display === '' || (element as HTMLElement).style.display === 'none') {
+        (element as HTMLElement).style.display = 'block';
+      } else {
+        (element as HTMLElement).style.display = 'none';
+      }
+    });
+
+    gerElements.forEach(function(element) {
+      if ((element as HTMLElement).style.display === '' || (element as HTMLElement).style.display === 'block') {
+        (element as HTMLElement).style.display = 'none';
+      } else {
+        (element as HTMLElement).style.display = 'block';
+      }
+    });
+  }
 }
