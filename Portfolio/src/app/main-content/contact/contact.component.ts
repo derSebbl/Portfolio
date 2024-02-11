@@ -96,6 +96,10 @@ mailTest = false;
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.showWindow();
+            setTimeout(() => {
+              this.hideWindow();
+            }, 3000);
           },
           error: (error) => {
             console.error(error);
@@ -108,4 +112,13 @@ mailTest = false;
     }
   }
 
+  showWindow() {
+    let window = document.getElementById('EmailMsg');
+    window?.style.setProperty('display', 'block');
+  }
+
+  hideWindow() {
+    let window = document.getElementById('EmailMsg');
+    window?.style.setProperty('display', 'none');
+  }
 }
