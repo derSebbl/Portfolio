@@ -19,7 +19,7 @@ export class NavbarComponent {
     var enElements = document.querySelectorAll('.en');
     var gerElements = document.querySelectorAll('.ger');
 
-    enElements.forEach(function(element) {
+    gerElements.forEach(function(element) {
       if ((element as HTMLElement).style.display === '' || (element as HTMLElement).style.display === 'none') {
         (element as HTMLElement).style.display = 'block';
       } else {
@@ -27,7 +27,7 @@ export class NavbarComponent {
       }
     });
 
-    gerElements.forEach(function(element) {
+    enElements.forEach(function(element) {
       if ((element as HTMLElement).style.display === '' || (element as HTMLElement).style.display === 'block') {
         (element as HTMLElement).style.display = 'none';
       } else {

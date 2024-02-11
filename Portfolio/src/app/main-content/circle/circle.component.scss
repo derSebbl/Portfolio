@@ -33,7 +33,7 @@
 
 #myWorkSmallEN {
   position: absolute;
-  top: 2335px;
+  top: 2475px;
   right: 55%;
 }
 
@@ -106,7 +106,7 @@
 
 @media (max-width: 1330px) {
   #contactBigEN, #contactBigGER {
-    display: none;
+    display: none !important;
   }
 
   #contactSmallEN, #contactSmallGER {
@@ -125,7 +125,7 @@
 
   @media (max-width: 1330px) {
     #contactSmallEN, #contactSmallGER {
-      display: none;
+      display: none !important;
     }
   }
 
@@ -153,7 +153,7 @@
     }
 
     #myWorkBigGER {
-      display: none;
+      display: none !important;
     }
   }
 
@@ -203,7 +203,7 @@
 
   @media (max-width: 855px) {
     #myWorkLeftHalfGER {
-      display: none;
+      display: none !important;
     }
   }
 
@@ -305,7 +305,7 @@
     }
 
     #myWorkBigEN, #myWorkBigGER {
-      display: none;
+      display: none !important;
     }
   }
 
