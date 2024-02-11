@@ -1,13 +1,22 @@
+.Component {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .Circles {
   position: absolute;
   top: 0;
+  max-width: 1920px;
   width: 100%;
 }
 
 #circleFrontPageEN, #circleFrontPageGER {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -71px;
+  left: -199px;
+  width: 892px;
+  height: 892px;
 }
 
 #circleAboutMeEN, #circleAboutMeGER {
@@ -45,13 +54,19 @@
 #myWorkLeftHalfEN, #myWorkLeftHalfGER {
   position: absolute;
   top: 2862px;
-  left: 0;
+  left: -166.07px;
+  width: 393.32px;
+  height: 393.32px;
+  rotate: -81.57deg;
 }
 
 #myWorkRightBigEN, #myWorkRightBigGER {
   position: absolute;
   top: 3147px;
   right: 0px;
+  width: 652.16px;
+  height: 652.16px;
+  rotate: -81.57deg;
 }
 
 #myWorkExtraSmallEN, #myWorkExtraSmallGER {
