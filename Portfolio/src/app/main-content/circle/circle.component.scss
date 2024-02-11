@@ -33,7 +33,7 @@
 
 #myWorkSmallEN {
   position: absolute;
-  top: 2475px;
+  top: 2350px;
   right: 55%;
 }
 
@@ -86,6 +86,13 @@
   right: 200px;
   z-index: 1;
 }
+
+// Media Queries//
+
+@media (max-width: 1736px){
+
+}
+
 
 @media (max-width: 1390px){
   #myWorkSmallGER {
@@ -254,7 +261,7 @@
   @media (max-width: 655px) {
 
     #myWorkLeftHalfEN, #myWorkLeftHalfGER {
-      display: none;
+      display: none !important;
     }
 
     #myWorkRightBigEN {
