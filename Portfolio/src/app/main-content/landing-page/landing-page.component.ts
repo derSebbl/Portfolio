@@ -27,7 +27,7 @@ export class LandingPageComponent {
 }
 
 openLinkedIn() {
-  window.open('https://www.linkedin.com/in/sebastian-binz-00a2502a8/', '_blank');
+  window.open('https://www.linkedin.com/in/sebastian-binz/', '_blank');
 }
 
 closeBurgerMenu() {
