@@ -26,12 +26,17 @@
 }
 
 .picturePerson {
-  max-width: 761px;
-  max-height: 917px;
+  width: 761px;
+  height: 917px;
   position: absolute;
-  top: 231px;
-  left: 32px;
+  top: 108px;
+  left: -214px;
   z-index: 9;
+  >img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
 }
 
 .nameAndJob {
@@ -313,6 +318,10 @@
     top: 480px;
     left: revert;
     overflow: hidden;
+    > img {
+      position: absolute;
+      left: -157px;
+    }
   }
 
   #frontEndGer, #developerGer {
@@ -344,6 +353,9 @@
     top: 408px;
     display: grid;
     justify-content: center;
+    > img {
+      left: -206px;
+    }
   }
 
   .nameGreeting {
