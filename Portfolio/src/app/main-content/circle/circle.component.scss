@@ -41,13 +41,13 @@
 
 #myWorkSmallEN {
   position: absolute;
-  top: 2350px;
+  top: 2450px;
   right: 55%;
 }
 
 #myWorkSmallGER {
   position: absolute;
-  top: 2355px;
+  top: 2410px;
   right: 55%;
 }
 
@@ -62,7 +62,7 @@
 
 #myWorkRightBigEN, #myWorkRightBigGER {
   position: absolute;
-  top: 3147px;
+  top: 3247px;
   right: 0px;
   width: 652.16px;
   height: 652.16px;
@@ -89,7 +89,7 @@
 
 #contactBigEN {
   position: absolute;
-  top: 5337px;
+  top: 5437px;
   left: 20%;
 }
 
@@ -109,7 +109,7 @@
 
 @media (max-width: 1390px){
   #myWorkSmallGER {
-    top: 2315px;
+    top: 2400px;
   }
 }
 
@@ -121,6 +121,12 @@
 
   #circleAboutMeSmallEN, #circleAboutMeSmallGER {
     right: 5%;
+  }
+}
+
+@media (max-width: 1385px) {
+  #myWorkSmallEN {
+    top: 2350px;
   }
 }
 
@@ -151,7 +157,7 @@
 
   @media (max-width: 1200px) {
     #myWorkSmallGER {
-      top: 2385px;
+      top: 2485px;
     }
   }
 
@@ -161,7 +167,7 @@
     }
 
     #myWorkSmallGER {
-      top: 2500px;
+      top: 2600px;
     }
 
     #myWorkBehindProjectEN, #myWorkBehindProjectGER {
@@ -212,8 +218,11 @@
       right: 80%;
     }
 
-    #myWorkFrontProjectEN, #myWorkFrontProjectGER {
+    #myWorkFrontProjectEN {
       top: 4950px;
+    }
+    #myWorkFrontProjectGER {
+    top: 5250px;
     }
 
     #myWorkBigEN, #myWorkBigGER {
@@ -317,7 +326,7 @@
     }
 
     #myWorkRightBigEN {
-      top: 2847px;
+      top: 2947px;
     }
 
     #myWorkRightBigGER {
@@ -340,7 +349,7 @@
     }
 
     #myWorkBehindProjectGER {
-      top: 4650px;
+      top: 4750px;
     }
 
     #myWorkExtraSmallEN {
@@ -352,11 +361,11 @@
     }
 
     #myWorkRightBigEN {
-      top: 3047px;
+      top: 3147px;
     }
 
     #myWorkRightBigGER {
-      top: 3347px;
+      top: 3447px;
     }
 
     #myWorkSmallEN {
@@ -364,17 +373,17 @@
     }
 
     #myWorkSmallGER {
-      top: 2990px;
+      top: 3090px;
     }
   }
 
   @media (max-width: 392px) {
     #myWorkRightBigEN {
-      top: 3147px;
+      top: 3247px;
     }
 
     #myWorkRightBigGER {
-      top: 3397px;
+      top: 3450px;
     }
 
     #myWorkSmallGER {
@@ -388,7 +397,7 @@
     #myWorkFrontProjectGER {
       top: 5650px;
     }
-  }
+  }  
 
   @media (max-width: 390px) {
     #myWorkSmallGER {
@@ -401,6 +410,10 @@
   }
 
   @media (max-width: 384px) {
+    #myWorkBehindProjectEN {
+      top: 4520px;
+    }
+
     #myWorkSmallEN {
       top: 2880px;
     }
@@ -410,11 +423,11 @@
     }
 
     #myWorkFrontProjectEN {
-      top: 5350px;
+      top: 5450px;
     }
 
     #myWorkFrontProjectGER {
-      top: 5590px;
+      top: 5690px;
     }
   }
 }
